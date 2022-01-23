@@ -124,7 +124,7 @@ function createDrawline(obj) {
         if (isMobile2 == false) {
             currentMousePosition = [e.pageX, e.pageY];
         }
-        else {
+        else if (isMobile2 == true) {
             currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
         }
 
@@ -164,7 +164,7 @@ function createDrawline(obj) {
         if (isMobile2 == false) {
             currentMousePosition = [e.pageX, e.pageY];
         }
-        else {
+        else if (isMobile2 == true) {
             currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
         }
 
@@ -279,7 +279,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 00003       ');
+            console.log('      att 04       ');
             console.log('touchemove01 ', currentMousePosition[0]);
             console.log('touchemove02 ', currentMousePosition[1]);
         }
