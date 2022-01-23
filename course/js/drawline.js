@@ -160,8 +160,13 @@ function createDrawline(obj) {
         e.preventDefault();
         this.classList.add("--pratice-selected");
         currentStartPoint = this;
-        currentMousePosition = [e.pageX, e.pageY];
-        currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
+
+        if (isMobile2 == false) {
+            currentMousePosition = [e.pageX, e.pageY];
+        }
+        else {
+            currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
+        }
 
         let m_startPositions = GetPointArrayPosition(currentStartPoint);
         let hasInArray = currentAnswer.includes(parseInt(m_startPositions));
@@ -274,7 +279,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 0002       ');
+            console.log('      att 03       ');
             console.log('touchemove01 ', currentMousePosition[0]);
             console.log('touchemove02 ', currentMousePosition[1]);
         }
