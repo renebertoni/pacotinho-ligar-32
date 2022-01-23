@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<title>Empiria Player</title>
+	<!-- include CSS !-->
+	<link rel="stylesheet" href="css/drawline.css">
+	<link rel="stylesheet" href="css/new_dictionary.css">
+	<!-- include Scorm API Wrapper !-->
+	<script src="runtime/common/util/util.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var windowLocation = window.location.toString();
+		var useScormYdp = toBool(getParam(windowLocation, "scormydp", false));
+		var useJsInject = toBool(getParam(windowLocation, "jsinjectrequests", false));
+		var previewMode = toBool(getParam(windowLocation, "previewMode", false));
+		var apiWrapperPath = "runtime/common/scorm/APIWrapper";
+		if (getParam(windowLocation, "api") == "13")
+			apiWrapperPath += "13";
+		apiWrapperPath += ".js";
+		document.write("<script src=\"" + apiWrapperPath + "\" type=\"text/javascript\"\><\/script>");
+
+		if (useJsInject) {
+			var jsFileRequestSuffix = ".js";
+			var jsFileRequestPerformer = "jsinject";
+			var jsFileRequestEnableLogging = false;
+		}
+
+		var lessonTitle = getParam(windowLocation, "title", "");
+		if (lessonTitle.length > 0)
+			document.title = lessonTitle;
+	</script>
+
+	<!-- empiria player !-->
+	<script type="text/javascript" language="javascript"
+		src="runtime/rtempiria/player/empiria.player.nocache.js"></script>
+	<script language="javascript">
+		window.scoStartDate = null;
+		window.player = null;
+
+		function empiriaPlayerAppLoaded() {
+			// start Scorm API
+			// doLMSInitialize();
+
+			// Initialize player
+			window.player = empiriaCreatePlayer('player');
+
+			// // Player flow options
+			window.player.importFlowOptions = function () {
+				return { showToC: false, showSummary: false, itemsDisplayMode: "ONE" }
+			};
+
+			// // state
+			window.player.importStateString = function () {
+				var state = doLMSGetValue("cmi.suspend_data");
+				if (state == null || state == false)
+					state = "";
+				return "";
+			}
+
+			// // work mode
+			window.player.enablePreviewMode = function () {
+				return previewMode;
+			}
+
+			// // mastery score
+			var mastery = doLMSGetMasteryScore();
+			if (mastery != "")
+				window.player.setMasteryScore(mastery);
+
+			// // load assessment
+			var sco = getAbsolutePageXmlUrl(true);
+			window.player.load(sco);
+
+			window.scoStartDate = new Date();
+		}
+
+	</script>
+
+	<style type="text/css">
+		/* html * {
+			overflow: hidden;
+		} */
+
+		#mainPreloader {
+			position: absolute;
+			width: 96px;
+			height: 96px;
+			top: 50%;
+			left: 50%;
+			margin-left: -48px;
+			margin-top: -48px;
+		}
+
+		.testexd {
+			display: none !important;
+		}
+
+		.qp-div.lesson-footer-navigation {
+			display: none;
+		}
+
+		/* .lesson-home-button-main,
+		.variable-page-number {
+			display: none !important;
+		} */
+
+		.variable-page-number {display: none !important;
+		}
+		.report-content tbody .qp-report-table-row-page-9{display: none;}
+	</style>
+
+</head>
+
+<body onunload="script_scorm.end()">
+	<script src="js/pi.js"></script>
+	
+	<div id="player"></div>
+	<audio id="xaudio" src="./" type="audio/mp3"></audio>
+
+	<script>
+		var xaudio = document.querySelector("#xaudio");
+		var xaudio_id = 0;
+		var xaudio_stop = false;
+		var xaudio_src = '';
+		var xaudio_ct = 0;
+		var xaudio_sync = null;
+
+		function xplay(src, target) {
+			xaudio_stop = false;
+			xaudio_id++;
+			let myid = xaudio_id;
+			xaudio_src = '.' + src.toString().split('src=')[1].split(' type=')[0].split('course')[1].slice(0, -1);
+			xaudio_ct = target.currentTime;
+			// console.log(xaudio_src);
+			setTimeout(() => {
+				// console.log(`M: ${myid} N: ${xaudio_id}`);
+				if (myid == xaudio_id) {
+					// console.log("play");
+					xaudio.src = xaudio_src;
+					xaudio.currentTime = xaudio_ct;
+					xaudio.load();
+					xaudio.play();
+					target.play();
+
+					setTimeout(() => {
+						xaudio_stop = true;
+						if (xaudio_sync != null) {
+							clearInterval(xaudio_sync);
+							xaudio_sync = null;
+							// console.log("Cleaning xaudio")
+						}
+						if (target.duration > 5) {
+							xaudio_sync = setInterval(() => {
+								if (parseInt(xaudio.currentTime) != parseInt(target.currentTime)) {
+									xaudio.currentTime = target.currentTime;
+								}
+							}, 250);
+						} else {
+							xaudio_sync = setInterval(() => {
+								// console.log(xaudio.currentTime);
+								if(xaudio.currentTime == 0){
+									xaudio.play();
+									target.currentTime = 0;
+								}
+								if (xaudio.currentTime > 0.5 && xaudio.currentTime < 1) {
+									target.currentTime = 0;
+								}
+							}, 250);
+						}
+					}, 200);
+				}
+			}, 200)
+		}
+
+		xaudio.addEventListener("pause", () => {
+			if(xaudio_stop){
+				xaudio_stop = false;
+				if (xaudio_sync != null) {
+					clearInterval(xaudio_sync);
+					xaudio_sync = null;
+					// console.log("Cleaning xaudio")
+				}
+				// console.log("Pausou");
+			}
+		})
+
+	</script>
+
+	<img id="mainPreloader" src="runtime/rtempiria/player/preloader/preloader.gif">
+
+	<script src="js/script.js"></script>
+	<script src="js/pi.js"></script>
+	<script src="js/drawline.js"></script>
+</body>
+
+</html>

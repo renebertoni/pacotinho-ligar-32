@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.ia-container {
+    position: relative;
+    max-width: 900px;
+    max-height: 506px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+	background-color: #FFF;
+}
+
+.in-cont {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+#allOk {
+	position: absolute;
+	z-index: 3;
+	visibility: hidden;
+	display: table;
+	left: 527px;
+	top: 255px;
+	width: 240px; 
+	height: 240px;
+	background-image: url(images/allOkBg.png);
+	background-repeat: no-repeat;
+}
+
+#allOk > span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#txt {
+	position: absolute;
+	z-index: 1;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 24px;
+	width: 900px;
+}
+
+#txt > span {
+	background-color: rgba(255,255,255,0.01);
+}
+
+svg {
+	position: absolute;
+	left: 773px;
+	top: 435px;
+	z-index: 2;
+}
+
+#bg {
+	position: absolute;
+	z-index: 0;
+	opacity: 1;
+}
+
+.button, .button-pressed, .el-clickable {
+    cursor: pointer !important;
+    cursor: hand !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.inactive {
+	cursor: auto !important;
+}
+.button-pressed > .normal, .button-pressed > .over {
+	display: none;
+}
+.button-pressed > .pressed {
+	display: inline;
+}
+.button > .normal {
+	display: inline;
+}
+.button > .over, .button > .pressed {
+	display: none;
+}
+
+
+.el-stroked {
+	text-decoration: line-through;
+}
+.el-default {
+	color: #595B68;
+}
+.el-good, .el-hidden {
+	color: #5EC7CB;
+}
+.el-wrong {
+	color: #E6388F;
+}
+.el-hidden {
+	display: none;
+}

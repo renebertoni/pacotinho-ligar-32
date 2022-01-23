@@ -1,0 +1,128 @@
+/* dialog */
+.dialog-main{
+	text-align:left;
+}
+
+.dialog .qp-textinteraction span{ /* color tekstu */
+	color:inherit;
+}
+
+.dialog .orange{
+    border: 2px solid #F17164;
+    border-radius: 7px;
+    margin-bottom: 0.2em;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.dialog .green{
+    border: 2px solid #5EC7CB;
+    border-radius: 7px;
+    margin-bottom: 0.2em;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.dialog .blue{
+    border: 2px solid #536FC3;
+    border-radius: 7px;
+    margin-bottom: 0.2em;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.dialog .red{
+    border: 2px solid #E6388F;
+    border-radius: 7px;
+    margin-bottom: 0.2em;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.dialog .grey{
+    border: 2px solid #87889D;
+    border-radius: 7px;
+    margin-bottom: 0.2em;
+    padding: 6px 12px;
+    position: relative;
+}
+.dialog .violet{
+    border: 2px solid #7146B2;
+    border-radius: 7px;
+    margin-bottom: 0.2em;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.dialog .dialog-left{
+    margin-left: 2.5em;
+	margin-right: 4em;
+}
+
+.dialog .dialog-right{
+    margin-left: 4em;
+	margin-right: 2.5em;
+}
+
+.dialog .dialog-center{
+    margin-left: 2.5em;
+	margin-right: 2.5em;
+}
+
+.dialog .orange p, 
+.dialog .blue p,
+.dialog .red p,
+.dialog .violet p,
+.dialog .grey p,
+.dialog .green p{
+	border: 0;
+	background: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	text-align: left;
+	padding:0;
+	vertical-align:middle;
+}
+
+/* dialog z audio */
+.dialog-main .qp-group > .qp-audioplayer-button + *,
+.dialog-main .qp-group > .qp-audioplayer-button-playing + * {
+    padding-left: 50px;
+    min-height:46px
+}
+
+.dialog-main .qp-group > .qp-audioplayer-button + * > div,
+.dialog-main .qp-group > .qp-audioplayer-button-playing + * > div {
+  	display:inline-block;
+  	vertical-align:middle;
+}
+
+.dialog-main .qp-group > .qp-audioplayer-button + *:before,
+.dialog-main .qp-group > .qp-audioplayer-button-playing + *:before {
+    content:"";
+    min-height:46px;
+    vertical-align:middle;
+    display:inline-block;
+}
+
+.dialog-main .qp-group > .qp-audioplayer-button + p:before,
+.dialog-main .qp-group > .qp-audioplayer-button-playing + p:before {
+    content:"";
+    min-height:42px;
+    vertical-align:middle;
+    display:inline;
+}
+
+.dialog-main .qp-group > .qp-audioplayer-button,
+.dialog-main .qp-group > .qp-audioplayer-button-playing {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.dialog-main > * {
+	background-color:#FFFFFF;
+}
+
+.dialog-main > .qp-group *{
+}

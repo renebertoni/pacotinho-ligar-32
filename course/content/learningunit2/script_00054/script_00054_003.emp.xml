@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_003" playerVersion="1.8.0" timeDependent="false" title="Practice 1">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>6</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="SELECTION_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="SELECTION_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="multiple" identifier="SELECTION_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="SELECTION_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="SELECTION_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="SELECTION_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="SELECTION_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="SELECTION_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="multiple" checkMode="default" countMode="correctAnswers" evaluate="user" identifier="SELECTION_RESPONSE_1">
+					<correctResponse>
+						<value>SELECTION_RESPONSE_1_0 SELECTION_RESPONSE_1_1</value>
+						<value>SELECTION_RESPONSE_1_3 SELECTION_RESPONSE_1_4</value>
+						<value>SELECTION_RESPONSE_1_6 SELECTION_RESPONSE_1_1</value>
+						<value>SELECTION_RESPONSE_1_8 SELECTION_RESPONSE_1_1</value>
+						<value>SELECTION_RESPONSE_1_10 SELECTION_RESPONSE_1_4</value>
+						<value>SELECTION_RESPONSE_1_12 SELECTION_RESPONSE_1_1</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u54_p3_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u54_p3_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Read and choose True or False.</simpleText>
+			</div>
+</group>			
+<group class="grid_2x50" id="dummy1_2">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group class="align-hl" id="dummy1_2_1">
+	<simpleText id="dummy1_2_1_1">
+Hi Emma and William,
+<br/>
+			
+<br/>
+			Milan is such a cool place!
+<br/>
+			We've arrived and the hotel is great! It's warm here, and we're going to meet Maria and her mum and dad for lunch.
+<br/>
+			After that we're going to climb the cathedral – they say the view of Milan is amazing from there!
+<br/>
+			Mum and Dad want to see the Leonardo da Vinci paintings, but the museum will be really busy and maybe they won't get tickets. While they're at the museum, I'm going to the Euro Luna Park with Maria. It's a huge amusement park.
+<br/>
+			Tomorrow's going to be great too – we're going to travel out to see Lake Como – they say it's really beautiful and the weather will be fine, so we can hire boats. Then we're going to visit this really famous ice cream house and we're going to eat lots of ice cream!
+<br/>
+			Then, on Monday, we'll stay in Milan and go shopping. We want to see all the big fashion houses! Of course, I won't have any money to buy anything, but it'll be nice to see any clothes.
+<br/>
+			My Italian is getting better!
+<br/>
+			How are you two? 
+<br/>
+			
+<br/>
+			Lots of love, 
+<br/>
+			Kate</simpleText>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_2_2" src="media/y7_u54_p3_001i.jpg" srcFullScreen="media/y7_u54_p3_001i_f.jpg">
+</img>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="align-hc" id="dummy1_3">
+	<selectionInteraction id="dummy1_3_1" matchMax="1" responseIdentifier="SELECTION_RESPONSE_1">
+        <item identifier="SELECTION_RESPONSE_1_0" matchMax="1">Kate is going to have lunch alone with her parents.</item>
+        <item identifier="SELECTION_RESPONSE_1_3" matchMax="1">Kate is going to climb the cathedral.</item>
+        <item identifier="SELECTION_RESPONSE_1_6" matchMax="1">Kate is going to stay with her parents in the afternoon.</item>
+        <item identifier="SELECTION_RESPONSE_1_8" matchMax="1">The weather will be rainy tomorrow.</item>
+        <item identifier="SELECTION_RESPONSE_1_10" matchMax="1">Kate's going to eat ice cream tomorrow.</item>
+        <item identifier="SELECTION_RESPONSE_1_12" matchMax="1">On Monday they'll travel to Venice.</item>
+
+        <simpleChoice identifier="SELECTION_RESPONSE_1_4" matchMax="1">True</simpleChoice>
+        <simpleChoice identifier="SELECTION_RESPONSE_1_1" matchMax="1">False</simpleChoice>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</selectionInteraction>
+</group>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

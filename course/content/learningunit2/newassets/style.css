@@ -1,0 +1,67 @@
+
+#stand2023 {
+    transform: translateY(-25px);
+}
+
+.text-div {
+    margin-top: 20px;
+}
+
+.text-div * {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.text-div-b {
+    margin-top: 30px;
+}
+
+.text-div-b * {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.text-div-f {
+    margin-top: 30px !important;
+}
+
+.text-cargo {
+    width: auto;
+    float: left;
+    color: #2E356D;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text-nome {
+    color: black;
+    width: auto;
+    float: left;
+    margin-left: 14px;
+    font-weight: 400;
+}
+
+.text-b {
+    color: black;
+    width: auto;
+    float: left;
+    font-weight: 400;
+}
+
+#text-d1 {
+    height: 155px;
+}
+
+#text-d2 {
+    height: 70px;
+}
+
+#text-d3 {
+    height: 90px;
+}
+
+#text-d4 {
+    height: 40px;
+}
+
+#text-d5 {
+    height: 130px;
+}

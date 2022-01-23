@@ -1,0 +1,621 @@
+.clouds-element{
+	position:relative;
+	display:inline-block;
+	}
+	
+.clouds-element-view{
+	position:relative;
+	display:inline-block;
+	}
+	
+.clouds{
+	position:relative;
+	z-index:10;
+}
+
+.cloud{
+	width:auto;
+	position:absolute;
+}
+
+.tick{
+	position:absolute;
+}
+
+/*---------------------------------------*/
+
+.orange .tick{
+}
+
+.blue .tick{
+}
+
+.green .tick{
+}
+
+.grey .tick{
+}
+
+.red .tick{
+}
+
+.violet .tick{
+}
+
+/*---------------------------------------*/
+
+
+.blue .tl .tick{
+background: url(tick_tb.png) no-repeat left top;
+}
+.green .tl .tick{
+background: url(tick_tb.png) no-repeat scroll -30px top;
+}
+.orange .tl .tick{
+background: url(tick_tb.png) no-repeat scroll -60px top;
+}
+.red .tl .tick{
+background: url(tick_tb2.png) no-repeat left top;
+}
+.grey .tl .tick{
+background: url(tick_tb2.png) no-repeat scroll -30px top;
+}
+.violet .tl .tick{
+background: url(tick_tb2.png) no-repeat scroll -60px top;
+}
+
+/*---------------------------------------*/
+
+
+.blue .tr .tick{
+background: url(tick_tb.png) no-repeat -90px top;
+}
+.green .tr .tick{
+background: url(tick_tb.png) no-repeat -120px top;
+}
+.orange .tr .tick{
+background: url(tick_tb.png) no-repeat scroll -150px top;
+}
+.red .tr .tick{
+background: url(tick_tb2.png) no-repeat -90px top;
+}
+.grey .tr .tick{
+background: url(tick_tb2.png) no-repeat -120px top;
+}
+.violet .tr .tick{
+background: url(tick_tb2.png) no-repeat scroll -150px top;
+}
+
+/*---------------------------------------*/
+
+
+.blue .bl .tick{
+background: url(tick_tb.png) no-repeat left bottom;
+}
+.green .bl .tick{
+background: url(tick_tb.png) no-repeat -30px bottom;
+}
+.orange .bl .tick{
+background: url(tick_tb.png) no-repeat scroll -60px bottom;
+}
+.red .bl .tick{
+background: url(tick_tb2.png) no-repeat left bottom;
+}
+.grey .bl .tick{
+background: url(tick_tb2.png) no-repeat -30px bottom;
+}
+.violet .bl .tick{
+background: url(tick_tb2.png) no-repeat scroll -60px bottom;
+}
+
+/*---------------------------------------*/
+
+
+.blue .br .tick{
+background: url(tick_tb.png) no-repeat -90px bottom;
+}
+.green .br .tick{
+background: url(tick_tb.png) no-repeat scroll -120px bottom;
+}
+.orange .br .tick{
+background: url(tick_tb.png) no-repeat scroll -150px bottom;
+}
+.red .br .tick{
+background: url(tick_tb2.png) no-repeat -90px bottom;
+}
+.grey .br .tick{
+background: url(tick_tb2.png) no-repeat scroll -120px bottom;
+}
+.grey .br .tick{
+background: url(tick_tb2.png) no-repeat scroll -150px bottom;
+}
+
+/*---------------------------------------*/
+
+
+
+/*---------------------------------------*/
+
+
+.blue .lt .tick{
+background: url(tick_lr.png) no-repeat left top;
+}
+.green .lt .tick{
+background: url(tick_lr.png) no-repeat scroll left -30px;
+}
+.orange .lt .tick{
+background: url(tick_lr.png) no-repeat scroll left -60px;
+}
+.red .lt .tick{
+background: url(tick_lr2.png) no-repeat left top;
+}
+.grey .lt .tick{
+background: url(tick_lr2.png) no-repeat scroll left -30px
+}
+.violet .lt .tick{
+background: url(tick_lr2.png) no-repeat scroll left -60px;
+}
+
+/*---------------------------------------*/
+
+
+.blue .lb .tick{
+background: url(tick_lr.png) no-repeat left -90px;
+}
+.green .lb .tick{
+background: url(tick_lr.png) no-repeat left -120px;
+}
+.orange .lb .tick{
+background: url(tick_lr.png) no-repeat left bottom;
+}
+.red .lb .tick{
+background: url(tick_lr2.png) no-repeat left -90px
+}
+.grey .lb .tick{
+background: url(tick_lr2.png) no-repeat left -120px;
+}
+.violet .lb .tick{
+background: url(tick_lr2.png) no-repeat left bottom;
+}
+
+/*---------------------------------------*/
+
+.blue .rt .tick{
+background: url(tick_lr.png) no-repeat right top;
+}
+.green .rt .tick{
+background: url(tick_lr.png) no-repeat right -30px;
+}
+.orange .rt .tick{
+background: url(tick_lr.png) no-repeat right -60px;
+}
+.red .rt .tick{
+background: url(tick_lr2.png) no-repeat right top
+}
+.grey .rt .tick{
+background: url(tick_lr2.png) no-repeat right -30px;
+}
+.violet .rt .tick{
+background: url(tick_lr2.png) no-repeat right -60px;
+}
+
+/*---------------------------------------*/
+
+.blue .rb .tick{
+background: url(tick_lr.png) no-repeat right -90px;
+}
+.green .rb .tick{
+background: url(tick_lr.png) no-repeat right -120px;
+}
+.orange .rb .tick{
+background: url(tick_lr.png) no-repeat right bottom;
+}
+.red .rb .tick{
+background: url(tick_lr2.png) no-repeat right -90px;
+}
+.grey .rb .tick{
+background: url(tick_lr2.png) no-repeat right -120px;
+}
+.violet .rb .tick{
+background: url(tick_lr2.png) no-repeat right bottom;
+}
+
+/*---------------------------------------*/
+
+
+.tr .tick{
+	width: 30px;
+	height: 40px;
+	right:25px;
+	top:-40px;
+}
+
+.tl .tick{
+	width: 30px;
+	height: 40px;
+	left:25px;
+	top:-40px;
+}
+
+.br .tick{
+	width: 30px;
+	height: 40px;
+	position:relative;
+	float:right;
+	margin-right:25px;
+	padding:4px 0;
+}
+
+.bl .tick{
+	width: 30px;
+	height: 40px;
+	position:relative;
+	float:left;
+	margin-left:25px;
+	padding:4px 0;
+}
+
+.lt .tick{
+	width: 40px;
+	height: 30px;
+	position:absolute;
+	left:-40px;
+	top:-7px;
+}
+
+.lb .tick{
+	width: 40px;
+	height: 30px;
+	position:absolute;
+	left:-40px;
+	bottom:-7px;
+}
+
+.rt .tick{
+	width: 40px;
+	height: 30px;
+	position:absolute;
+	right:-40px;
+	top:-7px;
+}
+
+.rb .tick{
+	width: 40px;
+	height: 30px;
+	position:absolute;
+	right:-40px;
+	bottom:-7px;
+}
+
+/*---------------------------------------*/
+
+.orange p{
+	border: 2px solid #F17164;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding:7px;
+}
+
+.blue p{
+	border: 2px solid #536FC3;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding:7px;
+}
+
+.green p{
+	border: 2px solid #5EC7CB;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding:7px;
+}
+.red p{
+	border: 2px solid #E6388F;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding:7px;
+}
+
+.grey p{
+	border: 2px solid #87889D;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding:7px;
+}
+.violet p{
+	border: 2px solid #7146B2;
+	background: #FFF;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align: center;
+	padding:7px;
+}
+
+/*---------------------------------------*/
+
+.y0  {top: 0px;}
+.y10 {top: 10px;}
+.y20 {top: 20px;}
+.y30 {top: 30px;}
+.y40 {top: 40px;}
+.y50 {top: 50px;}
+.y60 {top: 60px;}
+.y70 {top: 70px;}
+.y80 {top: 80px;}
+.y90 {top: 90px;}
+.y100 {top: 100px;}
+.y110 {top: 110px;}
+.y120 {top: 120px;}
+.y130 {top: 130px;}
+.y140 {top: 140px;}
+.y150 {top: 150px;}
+.y160 {top: 160px;}
+.y170 {top: 170px;}
+.y180 {top: 180px;}
+.y190 {top: 190px;}
+.y200 {top: 200px;}
+.y210 {top: 210px;}
+.y220 {top: 220px;}
+.y230 {top: 230px;}
+.y240 {top: 240px;}
+.y250 {top: 250px;}
+.y260 {top: 260px;}
+.y270 {top: 270px;}
+.y280 {top: 280px;}
+.y290 {top: 290px;}
+.y300 {top: 300px;}
+.y310 {top: 310px;}
+.y320 {top: 320px;}
+.y330 {top: 330px;}
+.y340 {top: 340px;}
+.y350 {top: 350px;}
+.y360 {top: 360px;}
+.y370 {top: 370px;}
+.y380 {top: 380px;}
+.y390 {top: 390px;}
+.y400 {top: 400px;}
+.y410 {top: 410px;}
+.y420 {top: 420px;}
+.y430 {top: 430px;}
+.y440 {top: 440px;}
+.y450 {top: 450px;}
+.y460 {top: 460px;}
+.y470 {top: 470px;}
+.y480 {top: 480px;}
+.y490 {top: 490px;}
+.y500 {top: 500px;}
+.y510 {top: 510px;}
+.y520 {top: 520px;}
+.y530 {top: 530px;}
+.y540 {top: 540px;}
+.y550 {top: 550px;}
+.y560 {top: 560px;}
+.y570 {top: 570px;}
+.y580 {top: 580px;}
+.y590 {top: 590px;}
+.y600 {top: 600px;}
+
+.x0 {left: 0px;}
+.x10 {left: 10px;}
+.x20 {left: 20px;}
+.x30 {left: 30px;}
+.x40 {left: 40px;}
+.x50 {left: 50px;}
+.x60 {left: 60px;}
+.x70 {left: 70px;}
+.x80 {left: 80px;}
+.x90 {left: 90px;}
+.x100 {left: 100px;}
+.x110 {left: 110px;}
+.x120 {left: 120px;}
+.x130 {left: 130px;}
+.x140 {left: 140px;}
+.x150 {left: 150px;}
+.x160 {left: 160px;}
+.x170 {left: 170px;}
+.x180 {left: 180px;}
+.x190 {left: 190px;}
+.x200 {left: 200px;}
+.x210 {left: 210px;}
+.x220 {left: 220px;}
+.x230 {left: 230px;}
+.x240 {left: 240px;}
+.x250 {left: 250px;}
+.x260 {left: 260px;}
+.x270 {left: 270px;}
+.x280 {left: 280px;}
+.x290 {left: 290px;}
+.x300 {left: 300px;}
+.x310 {left: 310px;}
+.x320 {left: 320px;}
+.x330 {left: 330px;}
+.x340 {left: 340px;}
+.x350 {left: 350px;}
+.x360 {left: 360px;}
+.x370 {left: 370px;}
+.x380 {left: 380px;}
+.x390 {left: 390px;}
+.x400 {left: 400px;}
+.x410 {left: 410px;}
+.x420 {left: 420px;}
+.x430 {left: 430px;}
+.x440 {left: 440px;}
+.x450 {left: 450px;}
+.x460 {left: 460px;}
+.x470 {left: 470px;}
+.x480 {left: 480px;}
+.x490 {left: 490px;}
+.x500 {left: 500px;}
+.x510 {left: 510px;}
+.x520 {left: 520px;}
+.x530 {left: 530px;}
+.x540 {left: 540px;}
+.x550 {left: 550px;}
+.x560 {left: 560px;}
+.x570 {left: 570px;}
+.x580 {left: 580px;}
+.x590 {left: 590px;}
+.x600 {left: 600px;}
+.x610 {left: 610px;}
+.x620 {left: 620px;}
+.x630 {left: 630px;}
+.x640 {left: 640px;}
+.x650 {left: 650px;}
+.x660 {left: 660px;}
+.x670 {left: 670px;}
+.x680 {left: 680px;}
+.x690 {left: 690px;}
+.x700 {left: 700px;}
+.x710 {left: 710px;}
+.x720 {left: 720px;}
+.x730 {left: 730px;}
+.x740 {left: 740px;}
+.x750 {left: 750px;}
+.x760 {left: 760px;}
+.x770 {left: 770px;}
+.x780 {left: 780px;}
+.x790 {left: 790px;}
+.x800 {left: 800px;}
+.x810 {left: 810px;}
+.x820 {left: 820px;}
+.x830 {left: 830px;}
+.x840 {left: 840px;}
+.x850 {left: 850px;}
+.x860 {left: 860px;}
+.x870 {left: 870px;}
+.x880 {left: 880px;}
+.x890 {left: 890px;}
+.x900 {left: 900px;}
+	
+.clouds p{display:inline-block;}
+
+.clouds .w0 p{width:auto}
+.clouds .w60 p{width: 60px;}
+.clouds .w70 p{width: 70px;}
+.clouds .w80 p{width: 80px;}
+.clouds .w90 p{width: 90px;}
+.clouds .w100 p{width: 100px;}
+.clouds .w110 p{width: 110px;}
+.clouds .w120 p{width: 120px;}
+.clouds .w130 p{width: 130px;}
+.clouds .w140 p{width: 140px;}
+.clouds .w150 p{width: 150px;}
+.clouds .w160 p{width: 160px;}
+.clouds .w170 p{width: 170px;}
+.clouds .w180 p{width: 180px;}
+.clouds .w190 p{width: 190px;}
+.clouds .w200 p{width: 200px;}
+.clouds .w210 p{width: 210px;}
+.clouds .w220 p{width: 220px;}
+.clouds .w230 p{width: 230px;}
+.clouds .w240 p{width: 240px;}
+.clouds .w250 p{width: 250px;}
+.clouds .w260 p{width: 260px;}
+.clouds .w270 p{width: 270px;}
+.clouds .w280 p{width: 280px;}
+.clouds .w290 p{width: 290px;}
+.clouds .w300 p{width: 300px;}
+.clouds .w310 p{width: 310px;}
+.clouds .w320 p{width: 320px;}
+.clouds .w330 p{width: 330px;}
+.clouds .w340 p{width: 340px;}
+.clouds .w350 p{width: 350px;}
+.clouds .w360 p{width: 360px;}
+.clouds .w370 p{width: 370px;}
+.clouds .w380 p{width: 380px;}
+.clouds .w390 p{width: 390px;}
+.clouds .w400 p{width: 400px;}
+.clouds .w410 p{width: 410px;}
+.clouds .w420 p{width: 420px;}
+.clouds .w430 p{width: 430px;}
+.clouds .w440 p{width: 440px;}
+.clouds .w450 p{width: 450px;}
+.clouds .w460 p{width: 460px;}
+.clouds .w470 p{width: 470px;}
+.clouds .w480 p{width: 480px;}
+.clouds .w490 p{width: 490px;}
+.clouds .w500 p{width: 500px;}
+.clouds .w510 p{width: 510px;}
+.clouds .w520 p{width: 520px;}
+.clouds .w530 p{width: 530px;}
+.clouds .w540 p{width: 540px;}
+.clouds .w550 p{width: 550px;}
+.clouds .w560 p{width: 560px;}
+.clouds .w570 p{width: 570px;}
+.clouds .w580 p{width: 580px;}
+.clouds .w590 p{width: 590px;}
+.clouds .w600 p{width: 600px;}
+
+
+.clouds .w0 > *{width:auto}
+.clouds .w60 > *{width: 60px;}
+.clouds .w70 > *{width: 70px;}
+.clouds .w80 > *{width: 80px;}
+.clouds .w90 > *{width: 90px;}
+.clouds .w100 > *{width: 100px;}
+.clouds .w110 > *{width: 110px;}
+.clouds .w120 > *{width: 120px;}
+.clouds .w130 > *{width: 130px;}
+.clouds .w140 > *{width: 140px;}
+.clouds .w150 > *{width: 150px;}
+.clouds .w160 > *{width: 160px;}
+.clouds .w170 > *{width: 170px;}
+.clouds .w180 > *{width: 180px;}
+.clouds .w190 > *{width: 190px;}
+.clouds .w200 > *{width: 200px;}
+.clouds .w210 > *{width: 210px;}
+.clouds .w220 > *{width: 220px;}
+.clouds .w230 > *{width: 230px;}
+.clouds .w240 > *{width: 240px;}
+.clouds .w250 > *{width: 250px;}
+.clouds .w260 > *{width: 260px;}
+.clouds .w270 > *{width: 270px;}
+.clouds .w280 > *{width: 280px;}
+.clouds .w290 > *{width: 290px;}
+.clouds .w300 > *{width: 300px;}
+.clouds .w310 > *{width: 310px;}
+.clouds .w320 > *{width: 320px;}
+.clouds .w330 > *{width: 330px;}
+.clouds .w340 > *{width: 340px;}
+.clouds .w350 > *{width: 350px;}
+.clouds .w360 > *{width: 360px;}
+.clouds .w370 > *{width: 370px;}
+.clouds .w380 > *{width: 380px;}
+.clouds .w390 > *{width: 390px;}
+.clouds .w400 > *{width: 400px;}
+.clouds .w410 > *{width: 410px;}
+.clouds .w420 > *{width: 420px;}
+.clouds .w430 > *{width: 430px;}
+.clouds .w440 > *{width: 440px;}
+.clouds .w450 > *{width: 450px;}
+.clouds .w460 > *{width: 460px;}
+.clouds .w470 > *{width: 470px;}
+.clouds .w480 > *{width: 480px;}
+.clouds .w490 > *{width: 490px;}
+.clouds .w500 > *{width: 500px;}
+.clouds .w510 > *{width: 510px;}
+.clouds .w520 > *{width: 520px;}
+.clouds .w530 > *{width: 530px;}
+.clouds .w540 > *{width: 540px;}
+.clouds .w550 > *{width: 550px;}
+.clouds .w560 > *{width: 560px;}
+.clouds .w570 > *{width: 570px;}
+.clouds .w580 > *{width: 580px;}
+.clouds .w590 > *{width: 590px;}
+.clouds .w600 > *{width: 600px;}

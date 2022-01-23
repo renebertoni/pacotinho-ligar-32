@@ -1,0 +1,65 @@
+.qp-swipe-options {
+  -empiria-swipe-disable-animation:1;
+	}
+	
+textentryinteraction{
+	-empiria-textentry-gap-width-align: normal;
+	}
+
+/* variable deffiniction */
+
+.variable-lesson-title {
+    -empiria-info-content: $[test.title];
+	}
+.variable-page-title {
+    -empiria-info-content: $[item.title];
+	}
+.variable-page-number {
+    -empiria-info-content: $[item.page_num] / $[item.page_count]; 
+	}
+.variable-page-feedback{
+ 	-empiria-info-content: $[item.feedback];
+	}
+
+/* page */
+
+.variable-page-score {
+	-empiria-info-content:$[item.done] / $[item.todo];
+	}
+.variable-page-score-progress {
+	-empiria-info-item-result-0   : progress_00;
+    -empiria-info-item-result-10  : progress_10;
+    -empiria-info-item-result-20  : progress_20;
+    -empiria-info-item-result-30  : progress_30;
+    -empiria-info-item-result-40  : progress_40;
+    -empiria-info-item-result-50  : progress_50;
+    -empiria-info-item-result-60  : progress_60;
+    -empiria-info-item-result-70  : progress_70;
+    -empiria-info-item-result-80  : progress_80;
+    -empiria-info-item-result-90  : progress_90;
+    -empiria-info-item-result-100 : progress_100;
+	}
+	
+.variable-page-score-progress-percent {
+	-empiria-info-content: $[item.result]%;
+	}
+		
+/* total */
+	
+.variable-total-score {
+	-empiria-info-content:$[test.done] / $[test.todo];
+	}
+.variable-total-score-progress {
+	-empiria-info-content: $[test.result]%;
+	-empiria-info-test-result-0   : progress_00;
+    -empiria-info-test-result-10  : progress_10;
+    -empiria-info-test-result-20  : progress_20;
+    -empiria-info-test-result-30  : progress_30;
+    -empiria-info-test-result-40  : progress_40;
+    -empiria-info-test-result-50  : progress_50;
+    -empiria-info-test-result-60  : progress_60;
+    -empiria-info-test-result-70  : progress_70;
+    -empiria-info-test-result-80  : progress_80;
+    -empiria-info-test-result-90  : progress_90;
+    -empiria-info-test-result-100 : progress_100;
+	}

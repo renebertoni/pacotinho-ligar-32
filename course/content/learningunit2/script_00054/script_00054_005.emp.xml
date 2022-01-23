@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_005" playerVersion="1.8.0" timeDependent="false" title="Practice 3">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>7</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_1">
+					<correctResponse>
+						<value forIndex="0">cool</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_2-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_2-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_2-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_2">
+					<correctResponse>
+						<value forIndex="0">hotel</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_3-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_3-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_3-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_3">
+					<correctResponse>
+						<value forIndex="0">going</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_4-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_4-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_4-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_4">
+					<correctResponse>
+						<value forIndex="0">we're</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_5-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_5-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_5-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_5">
+					<correctResponse>
+						<value forIndex="0">museum</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_6-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_6-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_6-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_6">
+					<correctResponse>
+						<value forIndex="0">stay</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_7-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_7-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_7-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_7">
+					<correctResponse>
+						<value forIndex="0">see</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u54_p5_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u54_p5_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Complete the email with the correct words.</simpleText>
+			</div>
+</group>			
+<group class="grid_80x20" id="dummy1_2">
+	<div class="t80x20">
+		<div class="w100perc">	
+			<div class="w80perc">
+				<div class="inner">
+					<group class="align-hl" id="dummy1_2_1">
+	<textInteraction id="dummy1_2_1_1">
+<span>Hi Emma and William,
+<br/>
+				
+<br/>
+				Milan is such a </span><dragInteraction responseIdentifier="DRAG_RESPONSE_1" sourcelistId="1"/><span> place!
+<br/>
+				We've arrived and the </span><dragInteraction responseIdentifier="DRAG_RESPONSE_2" sourcelistId="1"/><span> is great! It's warm here, and we're </span><dragInteraction responseIdentifier="DRAG_RESPONSE_3" sourcelistId="1"/><span> to meet Maria and her mum and dad for lunch.
+<br/>
+				After that </span><dragInteraction responseIdentifier="DRAG_RESPONSE_4" sourcelistId="1"/><span> going to climb the cathedral – they say the view of Milan is amazing from there!
+<br/>
+				Mum and Dad want to see the Leonardo da Vinci paintings, but the </span><dragInteraction responseIdentifier="DRAG_RESPONSE_5" sourcelistId="1"/><span> will be really busy and maybe they won't get tickets. 
+<br/>
+				Then, on Monday, we'll </span><dragInteraction responseIdentifier="DRAG_RESPONSE_6" sourcelistId="1"/><span> in Milan and go shopping. We want to </span><dragInteraction responseIdentifier="DRAG_RESPONSE_7" sourcelistId="1"/><span> all the big fashion houses! Of course, I won't have any money to buy any clothes, but it'll be nice to see them.
+<br/>
+				My Italian is getting better!
+<br/>
+				How are you two?
+<br/>
+				
+<br/>
+				Lots of love, 
+<br/>
+				Kate</span>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+				</div>
+			</div>
+			<div class="w20perc">
+				<div class="inner">
+					<group class="slist_horizontal" id="dummy1_2_2">
+	<sourceList id="dummy1_2_2_1" moveElements="true" shuffle="true" sourcelistId="1">
+				<simpleSourceListItem alt="see">see</simpleSourceListItem>
+				<simpleSourceListItem alt="going">going</simpleSourceListItem>
+				<simpleSourceListItem alt="stay">stay</simpleSourceListItem>
+				<simpleSourceListItem alt="we're">we're</simpleSourceListItem>
+				<simpleSourceListItem alt="hotel">hotel</simpleSourceListItem>
+				<simpleSourceListItem alt="cool">cool</simpleSourceListItem>
+				<simpleSourceListItem alt="museum">museum</simpleSourceListItem>
+	</sourceList>
+</group>
+				</div>		
+			</div>
+		</div>
+	</div>
+</group>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

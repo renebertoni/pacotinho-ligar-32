@@ -1,0 +1,93 @@
+/*connection min600px */
+@media (max-width: 599px) {	
+		.qp-connection *{
+			display:none !important;
+			}
+		.qp-connection:after{
+			content:"Connection does not support the size of the screen";
+			display:block;
+			padding:2em;
+			padding-top:10em;
+			background: url(support.png) no-repeat scroll center 2em #9A9BB3;
+			background-size: auto 100px;
+			color:#FFF;
+			text-align:center;
+			}
+		.qp-connection:before{
+			content:none;
+			}
+	}
+	
+/*simulation min1024px */
+@media (max-width: 1023px) {	
+		.simulation, 
+		.simulation-activity,
+		.qp-simulation{
+			clear:both;
+			}
+		.simulation .qp-simulation *,
+		.simulation-activity .qp-simulation *{
+			display:none !important;
+			}
+		.simulation .qp-simulation:after,
+		.simulation-activity .qp-simulation:after{
+			content:"Simulation does not support the size of the screen";
+			display:block;
+			padding:2em;
+			padding-top:10em;
+			background: url(support.png) no-repeat scroll center 2em #9A9BB3;
+			background-size: auto 100px;
+			color:#FFF;
+			text-align:center;
+			}
+			
+		.simulation:before,
+		.simulation-activity:before{
+			content:none;
+			}
+		.simulation:after,
+		.simulation-activity:after{
+			content:none;
+			}
+		.crossword-panel{
+			display:none !important;
+		}
+		.simulation-html .qp-simulation:after{
+			content:none;
+		} 
+		.simulation-html .qp-simulation{
+			display: block;
+		} 
+	}
+	
+	
+/*clouds min1024px */
+@media (max-width: 1023px) {
+		.clouds-element{
+			display:block !important;
+			}
+		.clouds-element > *{
+			display:none !important;
+			}
+		.clouds-element:after{
+			content:"This module does not support the size of the screen";
+			display:block;
+			padding:2em;
+			padding-top:10em;
+			background: url(support.png) no-repeat scroll center 2em #9A9BB3;
+			background-size: auto 100px;
+			color:#FFF;
+			text-align:center;
+			}
+	}	
+	
+/*inne min1024px */
+@media (max-width: 1023px) {
+		.notsupported{
+			display:none !important;
+		}
+		.qp-external-presentation-module + .crossword-panel,
+		.qp-external-presentation-module + .notsupported {
+   			display:block !important;
+		}
+	}

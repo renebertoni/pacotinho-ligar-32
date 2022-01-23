@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_008" playerVersion="1.8.0" timeDependent="false" title="English to take away">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>0</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_1">
+					<correctResponse>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_2-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_2-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_2-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_2">
+					<correctResponse>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_3-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="EDIT_RESPONSE_3-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="EDIT_RESPONSE_3-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="EDIT_RESPONSE_3">
+					<correctResponse>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-eta">	
+			<div class="page-header">		
+				<div class="lesson-header-home-button"><link itemIndex="0"><shape class="home-button"/></link></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u54_p8_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u54_p8_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+You're going to London for the weekend. Look at the pictures and decide what you're going to see and do. Then write an email to your friend telling them about it.</simpleText>
+			</div>
+</group>			
+<group class="grid_2x50" id="dummy1_2">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group class="align-hc" id="dummy1_2_1">
+	<img class="colorline" fullscreenMode="magnific" id="dummy1_2_1_1" src="media/y7_u54_p8_001p.jpg" srcFullScreen="media/y7_u54_p8_001p_f.jpg">
+</img>			
+<simpleText id="dummy1_2_1_2">
+<b>see a view of London!</b></simpleText>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<group class="align-hc" id="dummy1_2_2">
+	<img class="colorline" fullscreenMode="magnific" id="dummy1_2_2_1" src="media/y7_u54_p8_002p.jpg" srcFullScreen="media/y7_u54_p8_002p_f.jpg">
+</img>			
+<simpleText id="dummy1_2_2_2">
+<b>see amazing things!</b></simpleText>
+</group>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="align-hl" id="dummy1_3">
+	<textInteraction id="dummy1_3_1">
+<span>Hi </span><textEntryInteraction class="gap40" responseIdentifier="EDIT_RESPONSE_1"/><span>
+<br/>
+			I'm here in London. It's </span><textEntryInteraction class="gap40" responseIdentifier="EDIT_RESPONSE_2"/><span>		
+<br/>
+			Love
+<br/>
+			</span><textEntryInteraction class="gap40" responseIdentifier="EDIT_RESPONSE_3"/></textInteraction>
+</group>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

@@ -1,0 +1,74 @@
+/* movie */
+.movie {
+	position:relative;
+}
+
+.movie > div > div > div{
+	max-width:100% !important;
+}
+.movie > div > div > div > .video-js{
+	max-width:none !important;
+}
+
+/* video after before */
+.movie > div:after {
+	content:"";
+	height:4px;
+	width:60%;
+	background-color:#87889D;
+	display:inline-block;
+	float:right;
+	overflow:auto;
+}
+	
+.movie > div:before {
+	content:"";
+	height:4px;
+	width:60%;
+	background-color:#87889D;
+	display:block;
+}
+
+/* video bbc */
+.movie2:after {
+    content: "";
+    width: 220px;
+    height: 40px;   
+    background: url('bbc.png') no-repeat;
+    top: 3px;
+    right: 0px;
+    position: absolute;
+}
+
+/* video big button*/
+.movie .vjs-default-skin .vjs-big-play-button {
+	top: 50%;
+	left: 50%;
+	margin-left: -2.5em;
+	margin-top: -2.5em;
+	height: 5em;
+	width: 5em;
+	border: 2px solid #FFFFFF;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0em 0em 60px #000000;
+	-webkit-box-shadow: 0em 0em 60px #000000;
+	-moz-box-shadow: 0em 0em 60px #000000;
+    box-shadow: 0em 0em 60px #000000;
+}
+	
+.movie .vjs-default-skin .vjs-big-play-button:before {
+	content: "\e001";
+	font-family: VideoJS;
+	line-height: 3.2em;
+	text-shadow: 0em 0em 20px #000000;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 1.6em;
+	color:#FFFFFF;
+}

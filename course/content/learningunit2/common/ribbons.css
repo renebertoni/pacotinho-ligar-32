@@ -1,0 +1,306 @@
+/* toc page */
+.qp-report .qp-link-content {
+	padding:0.8em 12px;
+	margin:0 36px;
+}
+	
+.normal-line .qp-report .qp-link-content{
+	padding:0.7em 12px;
+	margin:0 36px;
+}
+	
+.medium-line .qp-report .qp-link-content{
+	padding:0.6em 12px;
+	margin:0 36px;
+}
+		
+.small-line .qp-report .qp-link-content{
+	padding:0.5em 12px;
+	margin:0 36px;
+}
+	
+.revision .qp-report .qp-link-content{
+	padding:0.4em 12px;
+	margin:0 36px;
+}	
+.page-report .qp-report-table-row:last-child .qp-link-content{
+	cursor:inherit;
+}
+
+/* menu disabled after before ribbons*/	
+.page-menu .qp-report .qp-link-content{
+    padding: 0.8em;
+	margin: 0px;
+}
+	
+/* końcówki lini raportu */
+.toc-line-before{
+    background: url(rib1_l.png) no-repeat left top;
+    background-size: 100% 100%;
+    height: 100%;
+    position: absolute;
+    width: 36px;
+    left:0;
+    top:2px;
+    z-index:1;
+}
+.toc-line-after{
+    background: url(rib1_r.png) no-repeat right top;
+    background-size: 100% 100%;
+    height: 100%;
+    position: absolute;
+    width: 36px;
+    right:0;
+    top:2px;
+    z-index:1;
+}
+.toc-line-before-inner{
+	background:#F17164;
+	width:4px;
+	height:100%;
+	position:absolute;
+	top:-2px;
+	right:0;	
+}
+.toc-line-after-inner{
+	background:#F17164;
+	width:4px;
+	height:100%;
+	position:absolute;
+	top:-2px;
+	left:0;	
+}	
+.qp-report-table-row .qp-report-cell {
+	margin-bottom:3px;
+	position:relative;
+}
+
+/* color lini */
+.qp-report-table-row.page_toc .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_toc_visited .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_toc_normal .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_toc_medium .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_toc_small .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_toc_max .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_toc_revision .qp-report-cell .qp-link-content{
+	background-color:#5EC7CB;
+	}
+.qp-report-table-row.page_leadin .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_leadin_visited .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_leadin_visited_car .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_leadin_visited_ar .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_leadin_visited_r .qp-report-cell .qp-link-content{
+	background-color:#F17164;
+	}
+.qp-report-table-row.page_maininput .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_maininput_visited .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_maininput_visited_car .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_maininput_visited_ar .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_maininput_visited_r .qp-report-cell .qp-link-content{
+	background-color:#E6388F;
+	}
+.qp-report-table-row.page_test .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_test_placement .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_practice .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_practice_visited .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_practice_visited_car .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_practice_visited_ar .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_practice_visited_r .qp-report-cell .qp-link-content{
+	background-color:#7146B2;
+	}
+.qp-report-table-row.page_eta .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_eta_visited .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_eta_visited_car .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_eta_visited_ar .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_eta_visited_r .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_se_visited .qp-report-cell .qp-link-content{
+	background-color:#536FC3;
+	}
+.qp-report-table-row.page_report .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_report_normal .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_report_medium .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_report_small .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_report_max .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_report_revision .qp-report-cell .qp-link-content,
+.qp-report-table-row.page_report_feedback .qp-report-cell .qp-link-content{
+	background-color:#5EC7CB;
+	}
+
+
+/* graphic report line after before default and last line report page*/
+.toc-line-before,
+.page-report .qp-report-table-row:last-child .qp-report-cell .toc-line-before{
+    background-image: url(rib6_l.png);
+}
+.toc-line-after,
+.page-report .qp-report-table-row:last-child .qp-report-cell .toc-line-after{
+    background-image: url(rib6_r.png);
+}
+.toc-line-before-inner,
+.page-report .qp-report-table-row:last-child .qp-report-cell .toc-line-before-inner{
+	background:#9A9BB3;
+}
+.toc-line-after-inner,
+.page-report .qp-report-table-row:last-child .qp-report-cell .toc-line-after-inner{
+	background:#9A9BB3;
+}
+.page-report .qp-report-table-row:last-child .qp-report-cell .qp-link-content{
+    background: #9A9BB3;
+}
+.page-report .qp-report-table-row:last-child .qp-report-cell {
+    font-weight:bold;
+}
+
+
+/* grafika koncówek nakladka */
+.qp-report-table-row.page_toc .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc .qp-report-cell .toc-line-after-inner, 
+.qp-report-table-row.page_toc_visited .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc_visited .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_toc_normal .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc_normal .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_toc_medium .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc_medium .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_toc_small .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc_small .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_toc_max .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc_max .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_toc_revision .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_toc_revision .qp-report-cell .toc-line-after-inner{
+	background-color:#5EC7CB;
+	}
+.qp-report-table-row.page_leadin .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_leadin .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_leadin_visited .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_leadin_visited .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_leadin_visited_car .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_leadin_visited_car .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_leadin_visited_ar .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_leadin_visited_ar .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_leadin_visited_r .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_leadin_visited_r .qp-report-cell .toc-line-after-inner{
+	background-color:#F17164;
+	}
+.qp-report-table-row.page_maininput .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_maininput .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_maininput_visited .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_maininput_visited .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_maininput_visited_car .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_maininput_visited_car .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_maininput_visited_ar .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_maininput_visited_ar .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_maininput_visited_r .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_maininput_visited_r .qp-report-cell .toc-line-after-inner{
+	background-color:#E6388F;
+	}
+.qp-report-table-row.page_test .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_test .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_test_placement .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_test_placement .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_practice .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_practice .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_practice_visited .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_practice_visited .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_practice_visited_car .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_practice_visited_car .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_practice_visited_ar .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_practice_visited_ar .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_practice_visited_r .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_practice_visited_r .qp-report-cell .toc-line-after-inner{
+	background-color:#7146B2;
+	}
+.qp-report-table-row.page_eta .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_eta .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_eta_visited .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_eta_visited .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_eta_visited_car .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_eta_visited_car .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_eta_visited_ar .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_eta_visited_ar .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_eta_visited_r .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_eta_visited_r .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_se_visited .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_se_visited .qp-report-cell .toc-line-after-inner{
+	background-color:#536FC3;
+	}
+.qp-report-table-row.page_report .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_report_normal .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report_normal .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_report_medium .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report_medium .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_report_small .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report_small .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_report_max .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report_max .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_report_revision .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report_revision .qp-report-cell .toc-line-after-inner,
+.qp-report-table-row.page_report_feedback .qp-report-cell .toc-line-before-inner, .qp-report-table-row.page_report_feedback .qp-report-cell .toc-line-after-inner{
+	background-color:#5EC7CB;
+	}
+
+/* grafika koncówek bg left*/
+.qp-report-table-row.page_toc .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_toc_visited .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_toc_normal .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_toc_medium .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_toc_small .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_toc_max .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_toc_revision .qp-report-cell .toc-line-before{
+	background-image: url(rib5_l.png);
+	}
+.qp-report-table-row.page_leadin .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_leadin_visited .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_leadin_visited_car .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_leadin_visited_ar .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_leadin_visited_r .qp-report-cell .toc-line-before{
+	background-image: url(rib1_l.png);
+	}
+.qp-report-table-row.page_maininput .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_maininput_visited .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_maininput_visited_car .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_maininput_visited_ar .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_maininput_visited_r .qp-report-cell .toc-line-before{
+	background-image: url(rib2_l.png);
+	}
+.qp-report-table-row.page_test .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_test_placement .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_practice .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_practice_visited .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_practice_visited_car .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_practice_visited_ar .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_practice_visited_r .qp-report-cell .toc-line-before{
+	background-image: url(rib3_l.png);
+	}
+.qp-report-table-row.page_eta .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_eta_visited .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_eta_visited_car .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_eta_visited_ar .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_eta_visited_r .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_se_visited .qp-report-cell .toc-line-before{
+	background-image: url(rib4_l.png);
+	}
+.qp-report-table-row.page_report .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_report_normal .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_report_medium .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_report_small .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_report_max .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_report_revision .qp-report-cell .toc-line-before,
+.qp-report-table-row.page_report_feedback .qp-report-cell .toc-line-before{
+	background-image: url(rib5_l.png);
+	}
+
+/* grafika koncówek bg right*/	
+.qp-report-table-row.page_toc .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_toc_visited .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_toc_normal .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_toc_medium .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_toc_small .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_toc_max .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_toc_revision .qp-report-cell .toc-line-after{
+	background-image: url(rib5_r.png);
+	}
+.qp-report-table-row.page_leadin .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_leadin_visited .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_leadin_visited_car .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_leadin_visited_ar .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_leadin_visited_r .qp-report-cell .toc-line-after{
+	background-image: url(rib1_r.png);
+	}
+.qp-report-table-row.page_maininput .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_maininput_visited .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_maininput_visited_car .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_maininput_visited_ar .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_maininput_visited_r .qp-report-cell .toc-line-after{
+	background-image: url(rib2_r.png);
+	}
+.qp-report-table-row.page_test .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_test_placement .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_practice .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_practice_visited .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_practice_visited_car .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_practice_visited_ar .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_practice_visited_r .qp-report-cell .toc-line-after{
+	background-image: url(rib3_r.png);
+	}
+.qp-report-table-row.page_eta .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_eta_visited .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_eta_visited_car .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_eta_visited_ar .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_eta_visited_r .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_se_visited .qp-report-cell .toc-line-after{
+	background-image: url(rib4_r.png);
+	}
+.qp-report-table-row.page_report .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_report_normal .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_report_medium .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_report_small .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_report_max .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_report_revision .qp-report-cell .toc-line-after,
+.qp-report-table-row.page_report_feedback .qp-report-cell .toc-line-after{
+	background-image: url(rib5_r.png);
+	}

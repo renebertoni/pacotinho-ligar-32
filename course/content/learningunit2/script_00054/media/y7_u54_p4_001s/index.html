@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script>
+	
+	
+		// --- SETUP ---
+		
+		
+		var assetName = 'y7_u54_p4_001s';
+		
+		var manifest = [
+			{src:"sounds/ok.mp3", id:"ok"},
+			{src:"sounds/allOk.mp3", id:"allOk"},
+			{src:"sounds/wrong.mp3", id:"wrong"},
+			{src:"sounds/y7_u54_p4_001au.mp3", id:"snd01"}
+		];
+
+		// spacja przed znakami przestankowymi; błędne słowa (lub w nawiasach) oddzielone #
+
+		var texts = [
+			"Hi Emma and William , ",
+			"",
+			"Milan is such a horrible (cool) place ! ",
+			"",
+			"We’ve arrived and the hotel is great ! It’s cold (warm) here , ",
+			"and we’re going to meet Maria and her aunt (mum) and dad ",
+			"for lunch . ",
+			"",
+			"After that we’re going to climb the mountain (cathedral)  – ",
+			"they say the view of Milan is boring (amazing) from there ! ",
+			"",
+			"Tomorrow’s going to be great too  – we’re going to travel out ",
+			"to see Lake Como  – they say it’s really ugly (beautiful) and ",
+			"the weather will be fine , so we can hire boats . ",
+			"",
+			"Missing you ! ",
+			"Kate"
+		];
+		
+		var position = { x:40, y:45 };
+		
+		var nonClickable = [".", ",", "!", "?", "–"];
+		
+		
+		// --- SETUP END ---
+		
+
+	</script>
+	
+    <script type="text/javascript" src="libs/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="libs/underscore-min.js"></script>
+    <script type="text/javascript" src="libs/ydp/interactive-activity.js"></script>
+    <script type="text/javascript" src="libs/ydp/presentation-template-2.js"></script>
+</head>
+
+<body>
+
+    <div class="ia-container">
+	
+		<div class="in-cont">
+	
+	
+			<!-- BACKGROUND IMAGE --->
+			
+			<img id="bg" src="images/y7_u54_p4_001s_bg.png" width="900" height="506" />
+			
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="54" viewBox="0 0 110 54">
+			
+				<g id="playBtn" class="button" transform="translate(0 2)">
+					<image class="normal" xlink:href="images/audio_1.png" width="50" height="50" />
+					<image class="over" xlink:href="images/audio_klik.png" width="50" height="50" />
+					<image class="pressed" xlink:href="images/audio_over.png" width="50" height="50" />
+				</g>
+				
+				<g id="resetBtn" class="button" transform="translate(57 2)">
+					<image class="normal" xlink:href="images/reset_1.png" width="50" height="50" />
+					<image class="over" xlink:href="images/reset_klik.png" width="50" height="50" />
+				</g>
+				
+			</svg>
+			
+			<div id="txt">
+			</div>
+			
+			<div id="allOk">
+			</div>
+		
+		</div>
+		
+    </div>
+
+</body>
+
+</html>

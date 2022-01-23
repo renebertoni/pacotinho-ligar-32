@@ -1,0 +1,296 @@
+/* PARA NÃO ABRIR O DICIONÁRIO ANTIGO NO ANDROID */
+.qp-dictionary-popup {
+    display: none;
+}
+
+/* dictionary container */
+#dictionary_filter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    /* overflow-y: hidden; */
+}
+
+#dictionary_filter:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 200vh;
+    width: 100%;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8);
+}
+
+#dictionary_container {
+    position: relative;
+    display: flex;
+    top: 39%;
+    left: 50%;
+    width: 78%;
+    height: 72.5vh;
+    border-radius: 1rem;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: .65rem solid #DDDDDD;
+    image-rendering: -webkit-optimize-contrast;
+    background-image: url(../img/colorline.png), url(../img/colorline.png);
+    background-position-x: 10%, 90%;
+    background-position-y: 69.9vh, 2.1vh;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 72%, 72%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 1.2rem;
+    background-color: transparent;
+}
+
+/* Column 01 */
+#container_rows {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 87%;
+    height: 14.5%;
+    border-radius: 0.5rem;
+    background-color: #9a9bb3;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 88%;
+    height: 4vh;
+    gap: 0 0.16rem;
+    margin-left: .7rem;
+    background-color: transparent;
+}
+
+.bts_letras {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 6%;
+    height: 77%;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    border: 0.14rem solid #87889D;
+}
+
+.bts_letras:hover,
+.bts_letras p:hover {
+    color: #fff;
+    border-color: #E6388F;
+    background-color: #E6388F;
+}
+
+.bts_letras p {
+    text-align: center;
+    color: #595b68;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TXTS CONTAINERS */
+#container_words {
+    position: relative;
+    width: 87%;
+    height: 35vh;
+    overflow-y: scroll;
+    background-color: transparent;
+}
+
+.div_words {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    width: 98.5%;
+    height: 5vh;
+    color: #595b68;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    margin-bottom: -0.13rem;
+    border-image: initial;
+    border: .18rem solid rgb(135, 136, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: right center;
+    background: url(../img/btn_dictionary_list_normal.png) right center / 32px 32px no-repeat rgb(255, 255, 255);
+}
+
+.div_words p {
+    padding-left: 0.7rem;
+}
+
+.div_words:hover {
+    z-index: 1;
+    color: #E6388F;
+    border-color: #E6388F;
+    background: url(../img/btn_dictionary_list_hover.png) right center / 32px 32px no-repeat rgb(255, 255, 255);
+}
+
+.first_word:first-child {
+    z-index: 1;
+    color: #fff;
+    border-color: #E6388F;
+    background: url(../img/btn_dictionary_list_selected.png) right center / 32px 32px no-repeat rgb(230, 56, 143);
+}
+
+/* Column 02 */
+#bt_close {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 3.6%;
+    left: 2.2%;
+    width: 2.6%;
+    height: 2.5%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/bt_close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+#bt_close:hover {
+    background-image: url(../img/bt_close_hover.png);
+}
+
+/* PESQUISA */
+#search_container {
+    position: relative;
+    width: 87%;
+    height: 5.5%;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+
+#search {
+    width: 98%;
+    height: 100%;
+    text-align: left;
+    padding-left: 0.2rem;
+    border-radius: 0.5rem;
+    border: 0.18rem solid #8c8da1;
+    background-color: transparent;
+}
+
+input {
+    -webkit-user-select: text;
+}
+
+#bt_search {
+    position: absolute;
+    cursor: pointer;
+    top: 16%;
+    left: 96%;
+    width: 5%;
+    height: 92%;
+    transform: translate(-50%, 0);
+    background-image: url(../img/bt_search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+#bt_search:hover {
+    background-image: url(../img/bt_search_hover.png);
+}
+
+/* ÁUDIO */
+#audio_container {
+    position: relative;
+    width: 100%;
+    height: 56vh;
+    border-left: .18rem solid #87889D;
+    background-color: transparent;
+}
+
+#audio_container p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#txt_audio_01 {
+    color: #9A9BB3;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+#txt_audio_02 {
+    color: #E6388F;
+    font-size: 1.5rem;
+}
+
+#txt_audio_03,
+#txt_audio_04 {
+    width: 88%;
+    font-size: 1.1rem;
+    color: #595B68;
+}
+
+#txt_audio_04 {
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+.audios_txts {
+    position: relative;
+    width: 96%;
+    text-align: left;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+#box_audio {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 1.5%;
+    width: 96%;
+    height: 7vh;
+    margin: 0 auto 1.5rem auto;
+    background-color: transparent;
+}
+
+/* ICON PLAY */
+.bt_audios {
+    cursor: pointer;
+    width: 12%;
+    height: 7vh;
+    margin-left: 0.5rem;
+    background-image: url(../img/bt_audio.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+}
+
+/* ICON PLAYED */
+#bt_audio.played {
+    background-image: url(../img/bt_pause.png);
+}

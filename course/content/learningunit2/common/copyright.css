@@ -1,0 +1,118 @@
+html {
+	font-size: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	}
+body#copyright {
+	border: 0;
+	margin: 0;
+	font-family: Arial,Helvetica,sans-serif; 
+	color: #595b68;
+	padding:20px;
+	}
+#copyright .main{
+	background: #FFF;
+	margin:20px;
+	}
+#copyright h2 {
+	font-size:24px;
+	margin-bottom:1em;
+	text-align:center;
+	}
+#copyright h3 {
+	font-size:20px;
+	margin-bottom:0.3em;
+	margin-top:1em;
+	text-align:center;
+	color:#00a7cf;
+	}	
+#copyright p {
+	font-size:18px;
+	text-align:center;
+	margin:0.2em 0;
+	}	
+#copyright .cmini{
+	width:70%;
+	margin:0 auto;
+	}
+#copyright .cmini p{
+	font-size:0.7em;
+	text-align:center;
+	margin:0 auto;
+	font-weight:normal;
+	}	
+#copyright .task-card{
+	position:relative;
+	max-width:900px;
+	margin:0 auto;
+	display:block;
+}
+#copyright .ydplogo{
+	padding-top:70px;
+	background: url("ydp-logo_2.png") no-repeat scroll center top;
+}
+#copyright .task-card-flower{
+	background: url("task_card_flower.png") no-repeat scroll left top;
+	background-size: 105px 105px;
+	width:105px;
+	height:105px;
+	position:absolute;
+	top:-23px;
+	left:-23px;
+}
+#copyright .task-card-shadow{
+	-webkit-box-shadow: 2px 5px 0px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 5px 0px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 0px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+#copyright .task-card-in{
+	background: url("task_card.png") no-repeat scroll left top;
+	background-color: #00A7CF;
+	background-size: 388px 388px;
+	border-radius: 0 25px 25px 25px;
+	-webkit-border-radius: 0 25px 25px 25px;
+	-moz-border-radius: 0 25px 25px 25px;
+    padding:20px;
+    border-bottom:#2E9FA3 2px solid;
+    border-right:#2E9FA3 2px solid;
+    overflow:hidden;
+    position:relative;
+}
+#copyright .task-card-in-in{
+	background: #FFF;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding:30px;
+	position:relative;
+	min-height:250px;
+}
+
+  @-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(360deg);}
+    to {-webkit-transform: rotate(0deg);}
+  }
+  @keyframes rotation {
+    from {-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}
+    to {-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);}
+  }
+#copyright .task-card-flower{
+	-webkit-animation-name: rotation;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+  
+#copyright a, #copyright a:visited, #copyright a:hover, #copyright a:active{
+	color:#00a7cf;
+	margin:20px;
+  }

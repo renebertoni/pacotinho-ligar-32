@@ -1,0 +1,16 @@
+.note{
+}
+.note-top{
+	height: 50px;
+	background: url("note_top.png") no-repeat scroll right top;
+}
+.note-center{
+	background: url("note_center.png") repeat-y scroll right top;)
+}
+.note-bottom{
+	height: 50px;
+	background: url("note_bottom.png") no-repeat scroll right bottom;
+}
+.note-center  > .inner{
+	padding:0 1em;
+}

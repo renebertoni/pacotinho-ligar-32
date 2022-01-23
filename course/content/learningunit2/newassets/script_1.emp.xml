@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_020" playerVersion="1.8.0" timeDependent="false" title="Credits">
+<styleDeclaration><link href="../newassets/style.css" userAgent=".*"/><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>0</value>
+		</defaultValue>
+	</outcomeDeclaration>
+		<itemBody>
+
+		<div class="page-report">
+			<div class="page-navigation">
+		        <prevItemNavigation/>
+				<!-- <nextItemNavigation/> -->
+			</div>
+			<div class="report-header col-md-7">
+				<div class="page-header">
+					<div class="lesson-header-home-button"><link itemIndex="0"><shape class="home-button"/></link></div>
+					<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+		        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+				</div>
+			</div>
+			<div class="goals-toc-content total-report-content col-md-5">
+				<div class="variable-total-score"><simpleText>Credits</simpleText></div>
+			</div>
+			<div class="main-toc-content main-report-content col-md-7">
+				<img id="stand2023" src="../newassets/standfor2023.svg"></img>
+				<div class="text-div text-div-f"><simpleText><p class="text-cargo">General director</p><p class="text-nome">Ricardo Tavares de Oliveira</p> <br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Associate editorial director</p><p class="text-nome">Cayube Galas</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Content manager</p><p class="text-nome">Ana Carolina Costa Lopes</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Series author</p><p class="text-nome">Simon Greenall</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Series co-authors and editors</p><p class="text-nome">Caroline Moore, Catrin Morris, Catherine Smith, Deborah Friedland, Denise Cowle, Helen Kidd, Jill Florent, Karen Richardson, Katie Foufouti, Kim Ashmore, Mandy Loader, Matthew Ellman, Michael Watts, Nicola Gardner, Nicola Prentis, Shazia Fardous, Sorrel Pitts, Victoria Boobyer</p><br/><br/><br/><br/><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Editor</p><p class="text-nome">Isabel Alencar Lacombe</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Editorial assistants</p><p class="text-nome">Felipe Caetano, Fernanda Valezini</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Programming</p><p class="text-nome">Mói Studio</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Additional audio recordings</p><p class="text-nome">Maximal Studio</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Image and text coordinator</p><p class="text-nome">Marcia Berne</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Photo researchers</p><p class="text-nome">FTD team</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Digital image processing technician</p><p class="text-nome">Eziquiel Rachet</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Backup supervisor</p><p class="text-nome">Silvia Regina E. Almeida</p><br/></simpleText></div>
+				<div class="text-div"><simpleText><p class="text-cargo">Efficiency and analytics coordinator</p><p class="text-nome">Marcelo Henrique Ferreira Fontes</p><br/></simpleText></div>
+
+				<div class="text-div-b" id="text-d1"><simpleText><p class="text-b">No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of StandFor. This material is sold subject to the condition that it shall not, by way of trade or otherwise, be lent, resold, hired out, or otherwise circulated without the publisher’s prior consent in any form of cover than that in which it is, published and without a similar condition being imposed on the subsequent purchaser.</p><br/></simpleText></div>
+				<div class="text-div-b" id="text-d2"><simpleText><p class="text-b">Whilst every effort has been made to check that the websites referred to in this publication were current at the time of publishing, StandFor disclaims responsibility for their content and/or possible changes.</p><br/></simpleText></div>
+				<div class="text-div-b" id="text-d3"><simpleText><p class="text-b">While every effort has been made to trace all the copyright holders, if any have been inadvertently overlooked, the publisher will be pleased to make the necessary arrangements at the first opportunity. Some names and identifying details have been changed to protect the privacy of individuals.</p><br/></simpleText></div>
+				<div class="text-div-b" id="text-d4"><simpleText><p class="text-b">Reprodução proibida: Art. 184 do Código Penal e Lei 9.610 de 19 de fevereiro de 1998.</p><br/></simpleText></div>
+				<div class="text-div-b" id="text-d5"><simpleText><p class="text-b">Rua Rui Barbosa, 156 – Bela Vista – São Paulo – SP – CEP 01326-010 Tel. 0800 772 2300 – Caixa Postal 65149 – CEP da Caixa Postal 01390-970 contato@standfor.com.br <a href="https://www.standfor.com.br">www.standfor.com.br</a></p><br/></simpleText></div>
+				<!-- <div class="text-div-b" id="text-d5"><simpleText><p class="text-b">The publisher would like to thank the following for permission to reproduce the photographs: sirtravelalot/Shutterstock.com; Jack Frog/Shutterstock.com; Iakov Filimonov/Shutterstock.com; Evgeny Bakharev/Shutterstock.com; Monkey Business Images/Shutterstock.com; fernandoalonsostockfilms/Shutterstock.com.</p><br/></simpleText></div> -->
+			</div>
+			<div class="report-footer">       
+		        <div class="lesson-footer-navigation">
+		        	<prevItemNavigation class="lesson-footer-navigation-button previous" id="prevPage"/>
+					<div class="lesson-footer-page-number"> <info class="variable-page-number"/></div>
+					<nextItemNavigation class="lesson-footer-navigation-button next" id="nextPage"/>
+				</div>
+			</div>
+			<div class="linedesign-bottom">
+			    <div class="line left color-back-1"/>
+			    <div class="line left color-back-2"/>
+			    <div class="line left color-back-3"/>
+			    <div class="line left color-back-4"/>
+			    <div class="line left color-back-5"/>
+			    <div class="line left color-back-6"/>
+			    <div class="line left color-back-7"/>
+			</div>
+		</div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

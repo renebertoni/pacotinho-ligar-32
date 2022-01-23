@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentTest compilerVersion="3.3.2.188" gtm="true" identifer="Lesson 54 – Fantastic Milan!" playerVersion="1.8.0" title="Fantastic Milan!">
+				
+		<testView href="common/lesson.emp.xml"/>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+	<general>
+		<keyword><string>amusement park</string></keyword>
+		<keyword><string>cathedral</string></keyword>
+		<keyword><string>museum</string></keyword>
+		<keyword><string>shopping</string></keyword>
+		<keyword><string>businessman</string></keyword>
+		<keyword><string>businesswoman</string></keyword>
+		<keyword><string>cook</string></keyword>
+		<keyword><string>dentist</string></keyword>
+		<keyword><string>doctor</string></keyword>
+		<keyword><string>engineer</string></keyword>
+		<keyword><string>journalist</string></keyword>
+		<keyword><string>teacher</string></keyword>
+		<title><string>Fantastic Milan!</string></title>
+	</general>
+	<educational>
+		<description><string>Learning goals:
+1. Reading for specific information
+2. Using "will" for future predictions and "be going to" for plans and intentions
+3. Revising vocabulary of leisure and job
+4. Writing a gapped email</string></description>
+	</educational>
+</lom>
+	<styleDeclaration>
+		<link href="common/default.css" userAgent=".*"/>
+	</styleDeclaration>
+	<variableProcessing template="default"/>
+
+	<outcomeDeclaration cardinality="single" identifier="DONE"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO"/>
+	<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+	<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+	<outcomeDeclaration cardinality="single" identifier="RESET"/>
+	<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+
+	<testPart>
+		<assessmentSection>
+			<assessmentItemRef class="page_toc" href="script_00054/script_00054_000.emp.xml" identifier="ITEM_000"/>
+			<assessmentItemRef class="page_leadin_visited" href="script_00054/script_00054_001.emp.xml" identifier="ITEM_001"/>
+			<assessmentItemRef class="page_maininput" href="script_00054/script_00054_002.emp.xml" identifier="ITEM_002"/>
+			<assessmentItemRef class="page_practice" href="script_00054/script_00054_003.emp.xml" identifier="ITEM_003"/>
+			<assessmentItemRef class="page_practice_visited" href="script_00054/script_00054_004.emp.xml" identifier="ITEM_004"/>
+			<assessmentItemRef class="page_practice" href="script_00054/script_00054_005.emp.xml" identifier="ITEM_005"/>
+			<assessmentItemRef class="page_practice" href="script_00054/script_00054_006.emp.xml" identifier="ITEM_006"/>
+			<assessmentItemRef class="page_practice_visited" href="script_00054/script_00054_007.emp.xml" identifier="ITEM_007"/>
+			<assessmentItemRef class="page_eta_visited" href="script_00054/script_00054_008.emp.xml" identifier="ITEM_008"/>
+			<assessmentItemRef class="page_report" href="script_00054/script_00054_009.emp.xml" identifier="ITEM_009"/>
+			<assessmentItemRef class="page_report" href="./newassets/script_1.emp.xml" identifier="ITEM_0010"/>
+		</assessmentSection>
+	</testPart>
+</assessmentTest>

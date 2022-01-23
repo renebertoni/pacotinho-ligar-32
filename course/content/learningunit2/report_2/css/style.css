@@ -1,0 +1,194 @@
+html, body{
+    margin: 0;
+}
+
+/* COLORS */
+.--report-screen-orange td,
+.--report-screen-orange .--report-flagLine{
+    background-color: #F17164;
+    border: 1px solid #F17164;
+}
+.--report-screen-pink td,
+.--report-screen-pink .--report-flagLine{
+    background-color: #E6388F;
+    border: 1px solid #E6388F;
+}
+.--report-screen-purple td,
+.--report-screen-purple .--report-flagLine{
+    background-color: #7146B2;
+    border: 1px solid #7146B2;
+}
+.--report-screen-blue td,
+.--report-screen-blue .--report-flagLine{
+    background-color: #536FC3;
+    border: 1px solid #536FC3;
+}
+.--report-screen-green td,
+.--report-screen-green .--report-flagLine{
+    background-color: #5EC7CB;
+    border: 1px solid #5EC7CB;
+}
+.--report-screen-gray td,
+.--report-screen-gray .--report-flagLine{
+    background-color: #9A9BB3;
+    border: 1px solid #9A9BB3;
+    cursor: default !important;
+}
+.--report-screen-gray p{
+    font-weight: bold;
+}
+
+.--report-screen-orange p,
+.--report-screen-pink p,
+.--report-screen-purple p,
+.--report-screen-blue p,
+.--report-screen-green p,
+.--report-screen-gray p{
+    padding: 0.9rem;
+}
+
+
+/* STRUCTURE */
+table
+{
+    border-spacing: 0 2px;
+}
+#--report-container{
+    width:85%;
+    margin: auto;
+}
+.--report-screen{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   display: inline-table;
+   position: relative;
+   cursor: pointer;
+}
+.--report-screen p{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+.--report-titleContainer{
+    width: 10rem;
+}
+.--report-scoreContainer{
+    width: 5rem;
+    text-align: right
+}
+.--report-progressBar{
+    width: 100%;
+    height: 0.35rem;
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+}
+.--report-progressFill{
+    height: 0.35rem;
+    background-color: white;
+}
+
+.--report-progressRocket{
+    width: 1rem;
+    height: 1rem;
+    background-color: chartreuse;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.--report-tick{
+    background-image: url(../img/tick_report.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    width: 30px;
+    height: 1rem;
+    margin-left: 30px;
+    padding: 1rem;
+}
+
+/* Flags */
+.--report-flag{
+    top: 8%;
+    height: 50px;
+    position: absolute;
+}
+
+.--report-flagLeft{
+    left: -35px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 36px;
+}
+.--report-flagRight{
+    right: -35px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 36px;
+}
+
+.--report-screen-orange .--report-flagLeft{
+    background-image: url(../img/rib1_l.png);
+}
+.--report-screen-orange .--report-flagRight{
+    background-image: url(../img/rib1_r.png);
+}
+.--report-screen-pink .--report-flagLeft{
+    background-image: url(../img/rib2_l.png);
+}
+.--report-screen-pink .--report-flagRight{
+    background-image: url(../img/rib2_r.png);
+}
+.--report-screen-purple .--report-flagLeft{
+    background-image: url(../img/rib3_l.png);
+}
+.--report-screen-purple .--report-flagRight{
+    background-image: url(../img/rib3_r.png);
+}
+.--report-screen-blue .--report-flagLeft{
+    background-image: url(../img/rib4_l.png);
+}
+.--report-screen-blue .--report-flagRight{
+    background-image: url(../img/rib4_r.png);
+}
+.--report-screen-green .--report-flagLeft{
+    background-image: url(../img/rib5_l.png);
+}
+.--report-screen-green .--report-flagRight{
+    background-image: url(../img/rib5_r.png);
+}
+.--report-screen-gray .--report-flagLeft{
+    background-image: url(../img/rib6_l.png);
+}
+.--report-screen-gray .--report-flagRight{
+    background-image: url(../img/rib6_r.png);
+}
+.--report-flagLine{
+    background: #9A9BB3;
+    width: 4px;
+    height: 92%;
+    position: absolute;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: none !important;
+}
+.--report-flagLineLeft{
+    left: 0;
+}
+.--report-flagLineRight{
+    right: 0;
+}
+
+.--report-score:last-child {
+    padding: 0px;
+    margin-right: 14px;
+}
+
+.--report-title {
+    white-space: nowrap;
+}

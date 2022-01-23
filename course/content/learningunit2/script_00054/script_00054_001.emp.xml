@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_001" playerVersion="1.8.0" timeDependent="false" title="Lead-in">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>0</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="CONNECTION_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="CONNECTION_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="multiple" checkMode="default" countMode="correctAnswers" evaluate="user" identifier="CONNECTION_RESPONSE_1">
+					<correctResponse>
+						<value>CONNECTION_RESPONSE_1_0 CONNECTION_RESPONSE_1_1</value>
+						<value>CONNECTION_RESPONSE_1_3 CONNECTION_RESPONSE_1_4</value>
+						<value>CONNECTION_RESPONSE_1_6 CONNECTION_RESPONSE_1_7</value>
+						<!-- <value>CONNECTION_RESPONSE_1_9 CONNECTION_RESPONSE_1_10</value> -->
+					</correctResponse>
+				</responseDeclaration>
+
+				<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_9-DONE" />
+				<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_9-TODO" />
+				<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_9-LASTCHANGE" />
+				<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_9-PREVIOUS" />
+				<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_9-LASTMISTAKEN" />
+				<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_9-DONEHISTORY" />
+				<outcomeDeclaration cardinality="multiple" identifier="ID_RESPONSE_9-DONECHANGES" />
+				<outcomeDeclaration cardinality="single" identifier="ID_RESPONSE_9-MISTAKES" />
+					<responseDeclaration cardinality="multiple" checkMode="default" countMode="correctAnswers" identifier="ID_RESPONSE_9">
+						<correctResponse>
+							<value>ID_RESPONSE_9_1</value>
+						</correctResponse>
+					</responseDeclaration>
+		<itemBody>
+
+		<div class="page-leadin">	
+          			<div class="page-header">		
+				<div class="lesson-header-home-button"><link itemIndex="0"><shape class="home-button"/></link></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/sample_scorm_v7_009_audio_ tela 2_10_001.mp3" id="dummy1_1_1">
+				<source src="media/sample_scorm_v7_009_audio_ tela 2_10_001.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2" >Where is Kate planning to go? Read the email and answer the questions.</simpleText>
+			</div>
+</group>			
+<group class="grid_2x50" id="dummy1_2">
+	<div class="t2x50">
+		<div class="w100perc">
+			<div class="w50perc">
+				<div class="inner">
+					<group class="align-hl" id="dummy1_2_1">
+	<simpleText id="dummy1_2_1_1">
+Hi Maria,
+<br/>
+			
+<br/>
+				I'm so excited that I'm going to come to Milan with Mum and Dad, and will finally meet you!
+<br/>
+				We think the plane will arrive at around 5:00 p.m. Then we'll get the train into town and find our hotel. Mum says she's going to call your mum in the morning from the hotel, so we can meet up – is that OK?
+<br/>
+				
+<br/>
+				See you soon!
+<br/>
+				Kate</simpleText>
+</group>
+				</div>	
+			</div>
+			<div class="w50perc">
+				<div class="inner">
+					<img class="colorline" fullscreenMode="magnific" id="dummy1_2_2" src="media/y7_u54_p1_001i.jpg" srcFullScreen="media/y7_u54_p1_001i_f.jpg">
+</img>
+				</div>	
+			</div>
+		</div>
+	</div>
+</group>			
+<group class="align-hc" id="dummy1_3">
+	<matchInteraction class="horizontal item-4" id="dummy1_3_1" responseIdentifier="CONNECTION_RESPONSE_1" shuffle="true">
+	<simpleMatchSet>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_0" matchMax="1">
+			<span>What's Kate's friend's name?</span>
+			<div id="start-0" class="start"></div>
+	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_3" matchMax="1">
+			<span>How is Kate going to travel?</span>
+			<div id="start-1" class="start"></div>
+	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_6" matchMax="1">
+			<span>Is Kate going to travel alone?</span>
+			<div id="start-2" class="start"></div>
+	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_9" matchMax="1">
+			<span>Is Kate going to stay at her friend's house?</span>
+			<div id="start-3" class="start"></div>
+	</simpleAssociableChoice>
+	</simpleMatchSet>
+	<simpleMatchSet>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_1" matchMax="1">
+
+			<span class='hide'>Maria</span>
+			<div id="end-0" class="end"></div>
+	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_4" matchMax="1">
+
+			<span class='hide'>She's going to travel by plane.</span>
+			<div id="end-1" class="end"></div>
+	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_7" matchMax="1">
+
+			<span class='hide'>No, she's going to travel with her parents.</span>
+			<div id="end-2" class="end"></div>
+	</simpleAssociableChoice>
+	<simpleAssociableChoice fixed="false" identifier="CONNECTION_RESPONSE_1_10" matchMax="1">
+
+			<span class='hide'>No, she's going to stay at a hotel.</span>
+			<div id="end-3" class="end"></div>
+	</simpleAssociableChoice>
+	</simpleMatchSet>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</matchInteraction>
+</group>
+</group>
+
+				<identificationInteraction id="testexd" maxSelections="1" responseIdentifier="ID_RESPONSE_9">
+					<simpleChoice identifier="ID_RESPONSE_9_1">Does</simpleChoice>
+				</identificationInteraction>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	    <div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

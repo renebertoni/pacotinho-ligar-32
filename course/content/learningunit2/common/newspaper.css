@@ -1,0 +1,16 @@
+.paper{
+}
+.paper-top{
+	height: 53px;
+	background: url("paper_top.png") no-repeat scroll right top;
+}
+.paper-center{
+	background: url("paper_center.png") repeat-y scroll left top;)
+}
+.paper-bottom{
+	height: 66px;
+	background: url("paper_bottom.png") no-repeat scroll right top;
+}
+.paper-center  > .inner{
+	padding:0 1em;
+}

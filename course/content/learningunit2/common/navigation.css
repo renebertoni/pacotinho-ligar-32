@@ -1,0 +1,56 @@
+.page-navigation{
+	position:absolute;
+	width:100%;
+	}
+	
+.page-navigation .qp-prev-button,
+.page-navigation .qp-next-button,
+.page-navigation .qp-prev-button-disabled,
+.page-navigation .qp-next-button-disabled{
+	width:50px;
+	height:80px;
+	position:fixed;
+	position: device-fixed; /*ipad fix */
+	top:50%;
+	margin-top:-40px;
+	}
+	
+.page-navigation .qp-prev-button.qp-prev-button-up,
+.page-navigation .qp-prev-button.qp-prev-button-up-hovering,
+.page-navigation .qp-prev-button.qp-prev-button-down,
+.page-navigation .qp-prev-button.qp-prev-button-down-hovering{
+	background:url(button_prev_page.png) no-repeat center center;
+	background-size:40px 80px;
+	left:0;
+	cursor:pointer;
+	}
+	
+.page-navigation .qp-next-button.qp-next-button-up,
+.page-navigation .qp-next-button.qp-next-button-up-hovering,
+.page-navigation .qp-next-button.qp-next-button-down,
+.page-navigation .qp-next-button.qp-next-button-down-hovering{
+	background:url(button_next_page.png) no-repeat center center;
+	background-size:40px 80px;
+	right:0;
+	cursor:pointer;
+	}
+	
+.page-navigation .qp-prev-button-disabled{
+	background:url(button_prev_page.png) no-repeat center center;
+	background-size:40px 80px;
+	left:0;
+	opacity: 0.30;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=30);
+	}
+	
+.page-navigation .qp-next-button-disabled{
+	background:url(button_next_page.png) no-repeat center center;
+	background-size:40px 80px;
+	right:0;
+	opacity: 0.30;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=30);
+	}
+	
+.page-report .page-navigation{
+	z-index:2010;
+	}

@@ -1,0 +1,40 @@
+<assessmentItem>		<itemBody>
+
+		<dictionaryButton class="dictionary_button"/>
+		<div class="page-navigation">
+	        <prevItemNavigation/>
+			<nextItemNavigation/>
+		</div>
+		<div class="lesson-header">
+			<div class="linedesign-top">
+			    <div class="line right color-back-1"/>
+			    <div class="line right color-back-2"/>
+			    <div class="line right color-back-3"/>
+			    <div class="line right color-back-4"/>
+			    <div class="line right color-back-5"/>
+			    <div class="line right color-back-6"/>
+			    <div class="line right color-back-7"/>
+			</div>			
+		</div>
+	    <div class="lesson-content">
+			 <pageInPage class="page-in-page"/>
+		</div>	
+		<div class="lesson-footer">       
+	        <div class="lesson-footer-navigation">
+	        	<prevItemNavigation class="lesson-footer-navigation-button previous" id="prevPage"/>
+				<pagesSwitchBox class="lesson-footer-page-switch-box"/>
+				<div class="lesson-footer-page-number"> <info class="variable-page-number"/></div>
+				<nextItemNavigation class="lesson-footer-navigation-button next" id="nextPage"/>
+			</div>
+			<div class="linedesign-bottom">
+			    <div class="line left color-back-1"/>
+			    <div class="line left color-back-2"/>
+			    <div class="line left color-back-3"/>
+			    <div class="line left color-back-4"/>
+			    <div class="line left color-back-5"/>
+			    <div class="line left color-back-6"/>
+			    <div class="line left color-back-7"/>
+			</div>
+	    </div>	
+			</itemBody>
+<styleDeclaration><link href="default.css" userAgent=".*"/><link href="variables.css" userAgent=".*"/><link href="modules.css" userAgent=".*"/><link href="simple.css" userAgent=".*"/><link href="video.css" userAgent=".*"/><link href="support.css" userAgent=".*"/><link href="navigation.css" userAgent=".*"/><link href="windows.css" userAgent=".*"/><link href="menu.css" userAgent=".*"/><link href="feedback.css" userAgent=".*"/><link href="editing.css" userAgent=".*"/><link href="newspaper.css" userAgent=".*"/><link href="touchfix.css" userAgent=".*"/><link href="ribbons.css" userAgent=".*"/><link href="dictionary.css" userAgent=".*"/><link href="copyright.css" userAgent=".*"/><link href="android.css" userAgent="(.*Android.*)"/><link href="ios.css" userAgent="(.*iPad.*|.*iPhone.*)"/></styleDeclaration><metaDescription><meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/></metaDescription></assessmentItem>

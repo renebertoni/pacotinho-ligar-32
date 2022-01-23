@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_002" playerVersion="1.8.0" timeDependent="false" title="Main input">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>1</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="ORDERING_RESPONSE_1-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="ORDERING_RESPONSE_1-TODO"/>
+		<outcomeDeclaration cardinality="ordered" identifier="ORDERING_RESPONSE_1-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="ordered" identifier="ORDERING_RESPONSE_1-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="ORDERING_RESPONSE_1-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="ORDERING_RESPONSE_1-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="ORDERING_RESPONSE_1-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="ORDERING_RESPONSE_1-MISTAKES"/>
+				<responseDeclaration cardinality="ordered" checkMode="default" countMode="single" identifier="ORDERING_RESPONSE_1">
+					<correctResponse>
+						<value forIndex="0">505934678</value>
+						<value forIndex="0">1393438359</value>
+						<value forIndex="0">-2014025256</value>
+						<value forIndex="0">-1126521575</value>
+						<value forIndex="0">-239017894</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-maininput">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><link itemIndex="0"><shape class="home-button"/></link></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u54_p2_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u54_p2_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Read the email and put the pictures in order.</simpleText>
+			</div>
+</group>			
+<group class="align-hl" id="dummy1_2">
+	<simpleText id="dummy1_2_1">
+Hi Emma and William,
+<br/>
+		
+<br/>
+		Milan is such a cool place!		
+<br/>
+		We've arrived and the hotel is great! It's warm here, and we're going to meet Maria and her mum and dad for lunch.
+<br/>
+		After that we're going to climb the cathedral – they say the view of Milan is amazing from there!
+<br/>
+		Mum and Dad want to see the Leonardo da Vinci paintings, but the museum will be really busy and maybe they won't get tickets. While they're at the museum, I'm going to the Euro Luna Park with Maria. It's a huge amusement park.
+<br/>
+		Tomorrow's going to be great too – we're going to travel out to see Lake Como – they say it's really beautiful and the weather will be fine, so we can hire boats. Then we're going to visit this really famous ice cream house and we're going to eat lots of ice cream!
+<br/>
+		Then, on Monday, we'll stay in Milan and go shopping. We want to see all the big fashion houses! Of course, I won't have any money to buy any clothes, but it'll be nice to see them.
+<br/>
+		My Italian is getting better!
+<br/>
+		How are you two? 
+<br/>
+		
+<br/>
+		Lots of love, 
+<br/>
+		Kate</simpleText>
+</group>			
+<group class="align-hc" id="dummy1_3">
+	<group class="ordering" id="dummy1_3_1">
+	<orderInteraction class="item-5" id="dummy1_3_1_1" orientation="horizontal" responseIdentifier="ORDERING_RESPONSE_1" shuffle="true">
+
+	<simpleChoice identifier="505934678">
+<img class="" src="media/y7_u54_p2_001i.jpg"/>	</simpleChoice>
+	<simpleChoice identifier="1393438359">
+<img class="" src="media/y7_u54_p2_002i.jpg"/>	</simpleChoice>
+	<simpleChoice identifier="-2014025256">
+<img class="" src="media/y7_u54_p2_003i.jpg"/>	</simpleChoice>
+	<simpleChoice identifier="-1126521575">
+<img class="" src="media/y7_u54_p2_004i.jpg"/>	</simpleChoice>
+	<simpleChoice identifier="-239017894">
+<img class="" src="media/y7_u54_p2_005i.jpg"/>	</simpleChoice>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+    <not><or>
+    <propertyCondition property="allOk"/>
+    </or></not>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</orderInteraction>
+</group>
+</group>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	    <div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

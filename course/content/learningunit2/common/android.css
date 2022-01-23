@@ -1,0 +1,51 @@
+.qp-img-content {
+	-webkit-animation-name: none;
+	animation-name: none;
+ }
+
+@media (max-width: 1024px) {	
+/*navigation*/
+.page-navigation .qp-prev-button,
+.page-navigation .qp-next-button,
+.page-navigation .qp-prev-button-disabled,
+.page-navigation .qp-next-button-disabled{
+	width:50px;
+	height:80px;
+	position:absolute;
+	position: device-fixed; /*ipad fix */
+	top:300px;
+	margin-top:-40px;
+	}
+	
+/*modules*/	
+.page-content {
+	padding:0 62px 20px 62px;
+	min-height:520px;
+	max-width:900px;
+	margin:0 auto;
+	}
+	
+.lesson-footer-buttons {
+    border-top: 4px solid #87889D;
+    bottom: 12px;
+    float: right;
+    padding: 10px 62px 0;
+    position: static;
+    position: static; /*ipad fix */
+    right: 0;
+    width: auto;
+    z-index: 11;
+	}	
+	
+.lesson-footer {
+	 width: 100%;
+	 height: 75px;
+	 position: static;
+	 position: static; /*ipad fix */
+	 text-align: right;
+	 bottom: 0;
+	 left:0;
+	 background-color:#FFF;
+	 z-index: 10;
+	}
+}

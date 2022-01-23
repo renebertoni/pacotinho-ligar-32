@@ -1,0 +1,54 @@
+/* simulation */
+.qp-simulation{
+	touch-action: none;
+}
+
+/* image explorable */
+.qp-img-explorable{
+	touch-action: none;
+}
+
+/* labelling */
+.qp-labelling{
+	touch-action: none;
+}
+
+/* connection */
+.qp-connection{
+	touch-action: none;
+}
+
+/* ordering */
+.qp-ordered{
+	touch-action: none;
+}
+
+/* source list */
+.gwtQuery-droppable{
+	touch-action: none;
+}
+.qp-sourcelist{
+	touch-action: none;
+} 
+
+/* player progress bar */
+.vjs-control-bar{
+	touch-action: none;
+}
+.qp-media-progressbar-center-infobar{
+	touch-action: none;
+}
+.qp-media-progressbar-center-button{
+	touch-action: none;
+}
+.qp-media-progressbar{
+	touch-action: none;
+}
+
+/* modules */
+.qp-colorfill{
+	touch-action: none;
+}
+.qp-drawing-module{
+	touch-action: none;
+}

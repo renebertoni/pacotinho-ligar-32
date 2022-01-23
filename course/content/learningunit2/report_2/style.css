@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	font-family: 'Arial';
+}
+
+.ia-container {
+    position: relative;
+    max-width: 900px;
+    max-height: 506px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+	background-color: #ffffff;
+}
+
+.ia-incont {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.allok {
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	left: 648px;
+	top: 254px;
+	background: url('./images/welldone.png');
+}
+.tryagain {
+	background: url('./images/tryagain.png');
+}
+
+.timer {
+	position: absolute;
+	left: 25px;
+	top: 45px;
+	color: #ffffff;
+	font-size: 30px;
+}
+
+.progress {
+	position: absolute;
+	width: 860px;
+	height: 20px;
+	left: 20px;
+	top: 20px;
+}
+
+.progress-bar {
+	position: absolute;
+	width: 848px;
+	height: 8px;
+	left: 6px;
+	top: 6px;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+
+.progress-image {
+	position: absolute;
+	width: 860px;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+	background: url('./images/progres.png');
+}
+
+.tick {
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	background: url('./images/tick_report.png');
+	top: 434px;
+	opacity: 0.3;
+}
+#tick-0 {
+	left: 714px;
+}
+#tick-1 {
+	left: 771px;
+}
+#tick-2 {
+	left: 828px;
+}
+.tick-on {
+	opacity: 1;
+}
+
+.button-start {
+	position: absolute;
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	left: 720px;
+	top: 50px;
+	background: url('./images/start_1.png');
+}
+.button-start-on {
+	background: url('./images/pause_click.png');
+}
+
+.button-reset {
+	position: absolute;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	left: 830px;
+	top: 50px;
+	background: url('./images/reset_1.png');
+}
+.button-reset-on {
+	background: url('./images/reset_click.png');
+}
+
+.button-bzzz {
+	position: absolute;
+	cursor: pointer;
+	width: 375px;
+	height: 241px;
+	left: 252px;
+	top: 127px;
+	background: url('./images/btn_bzzz0001.png');
+}
+.button-bzzz-on {
+	background: url('./images/btn_bzzz0002.png');
+}

@@ -1,0 +1,55 @@
+/* speech lesson template modyfication */
+.lesson-speech .page-content {
+    padding: 0px 62px 20px 62px;
+}
+.lesson-speech .lesson-footer{
+	height:0px;
+}
+.lesson-speech .lesson-footer > .lesson-footer-navigation {
+	display:none;
+}
+.lesson-speech .page-menu {
+	display:none;
+}
+
+/* speech button definition */
+.lesson-speech .qp-speechscore-container a,
+.lesson-speech .qp-speechscore-container a:visited{
+	display:block;
+    padding:10px;
+	padding-right: 30px;
+	background:url(btn_speech_next.png) no-repeat right center #FFF;
+	background-size:40px;
+	margin-bottom: 3px;
+	color:#595B68;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+	}
+.lesson-speech .qp-speechscore-container a:hover,
+.lesson-speech .qp-speechscore-container a:active{
+	color:#FFF;
+	background-image:url(btn_speech_next_white.png);
+	background-color:#87889D;
+	background-size:40px;
+	}
+	
+/* speech frame */
+.lesson-speech .grid_2x50{
+	padding:20px 20px 160px 20px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background:url(bg_speech.png) no-repeat bottom center #D6D7E0;
+	background-size:100% auto;
+}
+
+/* in grid - margin modyfication */
+.lesson-speech .grid_2x50 > .qp-div > .w100perc > .w50perc > .inner > .qp-group > .qp-speechscore-container{
+	margin-top:0;
+	margin-bottom:0;
+}
+.lesson-speech .grid_2x50 > .qp-div > .w100perc > .w50perc > .inner{
+	padding-top:0;
+	padding-bottom:0;
+}

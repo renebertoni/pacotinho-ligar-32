@@ -1,0 +1,46 @@
+/* SIZES */
+.text{
+    font-size: 1.2rem;
+    font-family: Arial,Helvetica,sans-serif;
+    display: inline-block;
+}
+.subtitle{
+    font-size: 1.4rem;
+    font-family: Arial,Helvetica,sans-serif;
+    display: inline-block;
+}
+.title{
+    font-size: 1.8rem;
+    font-family: Arial,Helvetica,sans-serif;
+    display: inline-block;
+}
+p{
+    margin: 0.5rem 0;
+}
+
+/* COLORS */
+.gray{
+    color: #595b68;
+}
+.pink{
+    color: #E6388F;
+}
+.orange{
+    color: rgb(241, 113, 100);
+}
+.white{
+    color: rgb(255, 255, 255);
+}
+
+/* GENERICS */
+.bold{
+    font-weight: bold;
+}
+.bg-blue{
+    color: rgb(255, 255, 255);
+    background-color: #536FC3;
+    padding: 0.2rem 0.8rem;
+}
+.textOutline{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

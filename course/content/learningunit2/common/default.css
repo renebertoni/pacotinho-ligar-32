@@ -1,0 +1,37 @@
+html,body{}
+
+.grid_2x50{}
+.grid_2x50_noline{}
+.grid_33x66{}
+.grid_33x66_noline{}
+.grid_4x50{}
+.grid_4x50_noline{}
+.grid_66x33{}
+.grid_66x33_noline{}
+.grid_3x33{}
+.grid_3x33_noline{}
+.grid_2x33{}
+.grid_2x33_noline{}
+.grid_20x80{}
+.grid_20x80_noline{}
+.grid_80x20{}
+.grid_80x20_noline{}
+.grid_75x25{}
+.grid_75x25_noline{}
+.grid_25x75{}
+.grid_25x75_noline{}
+
+.align-hl{}
+.align-hr{}
+.align-hc{}
+.align-vm{}
+.align-vt{}
+.align-vb{}
+
+.tab1{}
+.tab2{}
+.tab3{}
+
+.hide {
+    display: none;;
+}

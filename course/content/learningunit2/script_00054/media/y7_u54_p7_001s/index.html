@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script>
+
+			var assetName = 'y7_u54_p7_001s';
+
+			var manifest = [
+				{src:"sounds/allOk.mp3", id:"allOk"},
+				{src:"sounds/ok.mp3", id:"ok"},
+				{src:"sounds/wrong.mp3", id:"wrong"}
+			];
+			
+			var questions = [ 
+		
+			
+			{ quest:"d_____\n\nThis person helps people who are ill.", answer:"doctor\n\nThis person helps people who are ill.", audio:"", imageBig:"",	image:"",	tipText:"" },
+			{ quest:"e_______\n\nThis person draws and builds buildings.", answer:"engineer\n\nThis person draws and builds buildings.", audio:"", imageBig:"",	image:"",	tipText:""  },
+			{ quest:"j_________\n\nThis person writes articles in newspapers or magazines.", answer:"journalist\n\nThis person writes articles in newspapers or magazines.", audio:"", imageBig:"",	image:"",	tipText:""  },
+			{ quest:"c___\n\nThis person cooks food in a restaurant.", answer:"cook\n\nThis person cooks food in a restaurant.", audio:"", imageBig:"",	image:"",	tipText:"" },
+			{ quest:"d______\n\nThis person helps you with your teeth.", answer:"dentist\n\nThis person helps you with your teeth.", audio:"", imageBig:"",	image:"",	tipText:""  }
+			
+			
+			
+		];
+
+
+			var imagesIncluded = false;
+			// add minitures to div preloader
+			// if no images included - comment out all div preloader
+
+			var width  = 260;  // width of each image, must be the same
+			var height = 260;  // height of each image, must be the same
+			var posX   = 300;  // pos X of images
+			var posY   = 20;   // pos Y of images
+
+			var buttonAudioVisible = false;
+		</script>
+
+		<script type="text/javascript" src="libs/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="libs/underscore-min.js"></script>
+		<script type="text/javascript" src="libs/ydp/presentation-template-2.js"></script>
+		<script type="text/javascript" src="libs/ydp/interactive-activity.js"></script>
+	</head>
+	<body>
+	
+		<!--div id="preloader">
+			<img src="images/y9_u41_p4_001s_01.jpg"/>
+			<img src="images/y9_u41_p4_001s_02.jpg"/>
+			<img src="images/y9_u41_p4_001s_03.jpg"/>
+			<img src="images/y9_u41_p4_001s_04.jpg"/>
+			<img src="images/y9_u41_p4_001s_05.jpg"/>
+		</div-->
+	
+
+		<div class="ia-container">
+			<div class="in-cont">
+				
+				<img id="bg" src="images/background.png" width="900" height="506" />
+				<div id="progres">
+					<img src="images/progress_line.png" width="122" height="22" /><span id="qCntr">1/8</span><div></div>
+				</div>
+				
+				<div id="feedMC">
+					<img id="feed0" src="images/hangman_feed0.png" width="900" height="506"/>
+					<img id="feed1" src="images/hangman_feed1.png" width="900" height="506"/>
+					<img id="feed2" src="images/hangman_feed2.png" width="900" height="506"/>
+					<img id="spider" src="images/spider.png" width="40" height="280"/>
+				</div>
+				
+				<span id="tipTxt"></span>
+				<div id="tipImg"></div>
+				<img id="welldone" src="images/allOkBg.png" width="560" height="104" />
+				
+				<div id="resetBtn" class="button"></div>
+				<div id="startBtn" class="button"></div>
+				<div id="nextBtn" class="button"></div>
+				
+				<div id="questionMC">
+					<span id="questionTxt">dddd</span><div id="audioBtn" class="button disabled"></div>
+				</div>
+				
+				<div id="lettersMC">
+					<div class="letter-row">
+						<div class="letter button disabled"><span>q</span></div>
+						<div class="letter button disabled"><span>w</span></div>
+						<div class="letter button disabled"><span>e</span></div>
+						<div class="letter button disabled"><span>r</span></div>
+						<div class="letter button disabled"><span>t</span></div>
+						<div class="letter button disabled"><span>y</span></div>
+						<div class="letter button disabled"><span>u</span></div>
+						<div class="letter button disabled"><span>i</span></div>
+						<div class="letter button disabled"><span>o</span></div>
+						<div class="letter button disabled"><span>p</span></div>
+					</div>
+					<div class="letter-row">
+						<div class="letter button disabled"><span>a</span></div>
+						<div class="letter button disabled"><span>s</span></div>
+						<div class="letter button disabled"><span>d</span></div>
+						<div class="letter button disabled"><span>f</span></div>
+						<div class="letter button disabled"><span>g</span></div>
+						<div class="letter button disabled"><span>h</span></div>
+						<div class="letter button disabled"><span>j</span></div>
+						<div class="letter button disabled"><span>k</span></div>
+						<div class="letter button disabled"><span>l</span></div>
+					</div>
+					<div class="letter-row">
+						<div class="letter button disabled"><span>z</span></div>
+						<div class="letter button disabled"><span>x</span></div>
+						<div class="letter button disabled"><span>c</span></div>
+						<div class="letter button disabled"><span>v</span></div>
+						<div class="letter button disabled"><span>b</span></div>
+						<div class="letter button disabled"><span>n</span></div>
+						<div class="letter button disabled"><span>m</span></div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+	</body>
+</html>

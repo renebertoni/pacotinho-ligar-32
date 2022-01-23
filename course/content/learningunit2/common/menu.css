@@ -1,0 +1,88 @@
+report.menu-content{
+	-empiria-report-items-include: 1:-1;
+	-empiria-report-show-non-activites: true;
+}
+
+.qp-div.page-menu .menu-button {
+   	background: url(button_home.png) no-repeat right top;
+   	background-size:30px auto;
+   	display: inline-block;
+    height: 30px;
+    position: fixed;
+    position: device-fixed; /*ipad fix */
+    right: 16px;
+    top: 19px;
+    width: 32px;
+	}
+	
+.qp-div.page-menu:hover .menu-button {
+   		background: none;
+	}
+	
+.qp-div.page-menu {
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    width: 260px;
+    z-index: 3000;
+    display:inline-block;
+    background:#9A9BB3;
+	}
+
+.qp-div.page-menu .qp-report .qp-info.variable-page-title > div {
+	padding-right: 2.5em;
+}
+
+.qp-div.page-menu:hover{
+    right: 0px;
+	}
+	
+.menu-content{
+	clear:both;
+	width:100%;
+	}
+.qp-div.page-menu.page-menu-width-md{	
+	padding: 0px 20px;
+}
+.qp-div.page-menu.page-menu-width-md .qp-report.menu-content{
+    height: 100%;
+	overflow: auto;
+}
+
+.qp-div.page-menu.page-menu-width-md .qp-report-table.menu-content{
+	margin: 20px 0px;
+}
+
+.lesson-header-home-button{
+	display:none;
+}
+	
+#qp-page0 .page-menu .qp-report-table-row-page-0 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page1 .page-menu .qp-report-table-row-page-1 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page2 .page-menu .qp-report-table-row-page-2 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page3 .page-menu .qp-report-table-row-page-3 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page4 .page-menu .qp-report-table-row-page-4 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page5 .page-menu .qp-report-table-row-page-5 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page6 .page-menu .qp-report-table-row-page-6 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page7 .page-menu .qp-report-table-row-page-7 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page8 .page-menu .qp-report-table-row-page-8 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page9 .page-menu .qp-report-table-row-page-9 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page10 .page-menu .qp-report-table-row-page-10 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page11 .page-menu .qp-report-table-row-page-11 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page12 .page-menu .qp-report-table-row-page-12 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page13 .page-menu .qp-report-table-row-page-13 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page14 .page-menu .qp-report-table-row-page-14 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page15 .page-menu .qp-report-table-row-page-15 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page16 .page-menu .qp-report-table-row-page-16 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page17 .page-menu .qp-report-table-row-page-17 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page18 .page-menu .qp-report-table-row-page-18 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page19 .page-menu .qp-report-table-row-page-19 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+#qp-page20 .page-menu .qp-report-table-row-page-20 .qp-info-content{background: url(tick_report.png) no-repeat right center; background-size:30px auto;}
+

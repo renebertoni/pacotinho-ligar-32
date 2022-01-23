@@ -1,0 +1,62 @@
+
+/* #region DRAW LINE */
+.--drawline-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 2px;
+    background-color: rgb(135, 136, 157);
+    transform-origin: center left;
+    z-index: 2;
+}
+#--drawline-ghost{
+    pointer-events: none;
+    margin: 0;
+    width: 2px;
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    float: left;
+    transform:translate(-100%,-50%);
+    z-index: 10;
+    background-color: brown;
+    /* background-color: brown; */
+}
+/* #endregion DRAW LINE */
+
+
+/* #region GENERAL PRATICES */
+.--pratice-selected::after{
+    background-color: rgb(135, 136, 157) !important;
+    border-color: rgb(135, 136, 157) !important;
+    color: white;
+}
+.--pratice-correct::after{
+    background-color: rgb(94, 199, 203) !important;
+    outline-color: rgb(94, 199, 203) !important;
+    color: white !important;
+}
+.--pratice-incorrect::after{
+    background-color: rgb(230, 56, 143) !important;
+    outline-color: rgb(230, 56, 143) !important;
+    color: white !important;
+}
+.--pratice-line-correct{
+    background-color: rgb(94, 199, 203) !important;
+}
+.--pratice-line-incorrect{
+    background-color: rgb(230, 56, 143) !important;
+}
+
+.--pratice-blocked{
+    background-color: rgb(182, 182, 182) !important;
+    outline-color: rgb(182, 182, 182) !important;
+}
+.--pratice-text-blocked{
+    color: rgb(162, 164, 192) !important;
+}
+.--pratice-border-blocked{
+    border-color: rgb(175, 175, 175) !important;
+}
+/* #endregion GENERAL PRATICES */

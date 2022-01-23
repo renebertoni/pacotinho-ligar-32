@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_006" playerVersion="1.8.0" timeDependent="false" title="Practice 4">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/><link href="../common/dialog.css" userAgent=".*"/><link href="../common/clouds.css" userAgent=".*"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>6</value>
+		</defaultValue>
+	</outcomeDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_10-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_10-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_10-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_10-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_10-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_10-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_10-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_10-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_10">
+					<correctResponse>
+						<value forIndex="0">businesswoman</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_11-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_11-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_11-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_11-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_11-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_11-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_11-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_11-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_11">
+					<correctResponse>
+						<value forIndex="0">dentist</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_12-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_12-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_12-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_12-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_12-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_12-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_12-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_12-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_12">
+					<correctResponse>
+						<value forIndex="0">cook</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_13-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_13-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_13-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_13-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_13-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_13-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_13-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_13-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_13">
+					<correctResponse>
+						<value forIndex="0">engineer</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_8-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_8-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_8-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_8">
+					<correctResponse>
+						<value forIndex="0">journalist</value>
+					</correctResponse>
+				</responseDeclaration>
+
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_9-DONE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_9-TODO"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_9-LASTCHANGE"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_9-PREVIOUS"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_9-LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_9-DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DRAG_RESPONSE_9-DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="DRAG_RESPONSE_9-MISTAKES"/>
+				<responseDeclaration cardinality="single" checkMode="default" countMode="single" identifier="DRAG_RESPONSE_9">
+					<correctResponse>
+						<value forIndex="0">doctor</value>
+					</correctResponse>
+				</responseDeclaration>
+		<itemBody>
+
+		<div class="page-practice">	
+           	<div class="page-header">		
+				<div class="lesson-header-home-button"><shape class="home-button"/></div>
+				<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+	        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+			</div>
+			<div class="page-content">	
+	            <group class="activity" id="dummy1">
+	<group class="rubric" id="dummy1_1">
+	<div class="rubric-cloud">
+				<audioPlayer class="player-normal" data="media/rub_y7_u54_p6_001au.mp3" id="dummy1_1_1">
+<source src="media/rub_y7_u54_p6_001au.mp3" type="audio/mp4"/>	</audioPlayer>
+				<simpleText class="question" id="dummy1_1_2">
+Read and label the picture to match the jobs with the people.</simpleText>
+			</div>
+</group>			
+<group class="dialog" id="dummy1_2">
+	<div class="dialog-main">
+		<group class="orange dialog-left" id="dummy1_2_1">
+	<group class="lt" id="dummy1_2_1_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_1_1_1">
+<b>Kate:</b> So, Maria, have you decided what job you'll do when you're older?</simpleText>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_2">
+	<group class="rt" id="dummy1_2_2_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_2_1_1">
+<b>Maria:</b> Yes, I'm going to be a doctor.</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_3">
+	<group class="lt" id="dummy1_2_3_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_3_1_1">
+<b>Kate:</b> Wow! So you've decided?</simpleText>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_4">
+	<group class="rt" id="dummy1_2_4_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_4_1_1">
+<b>Maria:</b> Yes, my grandfather was a doctor in a small town near Milan, and I want to be like him.</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_5">
+	<group class="lt" id="dummy1_2_5_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_5_1_1">
+<b>Kate:</b> What about your brothers?</simpleText>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_6">
+	<group class="rt" id="dummy1_2_6_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_6_1_1">
+<b>Maria:</b> Well… Gabriele says he'll be an engineer, but I don't think so. He doesn't study enough.</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_7">
+	<group class="lt" id="dummy1_2_7_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_7_1_1">
+<b>Kate:</b> And Paulo?</simpleText>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_8">
+	<group class="rt" id="dummy1_2_8_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_8_1_1">
+<b>Maria:</b> He's going to be a dentist. He's doing his first year at university now. And what about you and your family?</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_9">
+	<group class="lt" id="dummy1_2_9_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_9_1_1">
+<b>Kate:</b> Well, I'm going to be a businesswoman, so I can travel the world. Mum's a journalist and she loves it, particularly when she goes to other countries. Dad's a cook, he works a lot, and I think that looks like a difficult job.</simpleText>
+</group>
+</group>
+		<group class="green dialog-right" id="dummy1_2_10">
+	<group class="rt" id="dummy1_2_10_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_10_1_1">
+<b>Maria:</b> I'll teach him to cook Italian food – it's easy to cook and delicious!</simpleText>
+</group>
+</group>
+		<group class="orange dialog-left" id="dummy1_2_11">
+	<group class="lt" id="dummy1_2_11_1">
+	<div class="tick"/>
+		<simpleText id="dummy1_2_11_1_1">
+<b>Kate:</b> Yes, please!</simpleText>
+</group>
+</group>
+		<!-- cannot find module for dummy 'dummy12'!-->
+		<!-- cannot find module for dummy 'dummy13'!-->
+		<!-- cannot find module for dummy 'dummy14'!-->
+		<!-- cannot find module for dummy 'dummy15'!-->
+		<!-- cannot find module for dummy 'dummy16'!-->
+		<!-- cannot find module for dummy 'dummy17'!-->
+		<!-- cannot find module for dummy 'dummy18'!-->
+		<!-- cannot find module for dummy 'dummy19'!-->
+		<!-- cannot find module for dummy 'dummy20'!-->
+		<!-- cannot find module for dummy 'dummy21'!-->	
+		<!-- cannot find module for dummy 'dummy22'!-->
+		<!-- cannot find module for dummy 'dummy23'!-->
+		<!-- cannot find module for dummy 'dummy24'!-->
+		<!-- cannot find module for dummy 'dummy25'!-->
+		<!-- cannot find module for dummy 'dummy26'!-->
+		<!-- cannot find module for dummy 'dummy27'!-->
+		<!-- cannot find module for dummy 'dummy28'!-->
+		<!-- cannot find module for dummy 'dummy29'!-->
+		<!-- cannot find module for dummy 'dummy30'!-->
+		<!-- cannot find module for dummy 'dummy31'!-->
+		<!-- cannot find module for dummy 'dummy32'!-->
+		<!-- cannot find module for dummy 'dummy33'!-->
+		<!-- cannot find module for dummy 'dummy34'!-->
+		<!-- cannot find module for dummy 'dummy35'!-->
+	</div>
+</group>			
+<group class="clouds-element" id="dummy1_3">
+	<group class="clouds" id="dummy1_3_1">
+	<div class="clouds-main">
+		<group class="cloud x50 y280" id="dummy1_3_1_1">
+	<group id="dummy1_3_1_1_1">
+	<textInteraction class="horizontal" id="dummy1_3_1_1_1_1">
+<dragInteraction responseIdentifier="DRAG_RESPONSE_8" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<group class="cloud x190 y360" id="dummy1_3_1_2">
+	<group id="dummy1_3_1_2_1">
+	<textInteraction class="horizontal" id="dummy1_3_1_2_1_1">
+<dragInteraction responseIdentifier="DRAG_RESPONSE_9" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<group class="cloud x300 y300" id="dummy1_3_1_3">
+	<group id="dummy1_3_1_3_1">
+	<textInteraction class="horizontal" id="dummy1_3_1_3_1_1">
+<dragInteraction responseIdentifier="DRAG_RESPONSE_10" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<group class="cloud x400 y360" id="dummy1_3_1_4">
+	<group id="dummy1_3_1_4_1">
+	<textInteraction class="horizontal" id="dummy1_3_1_4_1_1">
+<dragInteraction responseIdentifier="DRAG_RESPONSE_11" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<group class="cloud x550 y300" id="dummy1_3_1_5">
+	<group id="dummy1_3_1_5_1">
+	<textInteraction class="horizontal" id="dummy1_3_1_5_1_1">
+<dragInteraction responseIdentifier="DRAG_RESPONSE_12" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<group class="cloud x690 y360" id="dummy1_3_1_6">
+	<group id="dummy1_3_1_6_1">
+	<textInteraction class="horizontal" id="dummy1_3_1_6_1_1">
+<dragInteraction responseIdentifier="DRAG_RESPONSE_13" sourcelistId="1"/>    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="wrong"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/wrong.mp3" type="narration">
+                        <source src="media/wrong.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="ok"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/ok.mp3" type="narration">
+                        <source src="media/ok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</textInteraction>
+</group>
+</group>
+		<!-- cannot find module for dummy 'dummy7'!-->
+		<!-- cannot find module for dummy 'dummy8'!-->
+		<!-- cannot find module for dummy 'dummy9'!-->
+		<!-- cannot find module for dummy 'dummy10'!-->
+		<!-- cannot find module for dummy 'dummy11'!-->
+		<!-- cannot find module for dummy 'dummy12'!-->
+		<!-- cannot find module for dummy 'dummy13'!-->
+		<!-- cannot find module for dummy 'dummy14'!-->
+		<!-- cannot find module for dummy 'dummy15'!-->
+		<!-- cannot find module for dummy 'dummy16'!-->
+		<!-- cannot find module for dummy 'dummy17'!-->
+		<!-- cannot find module for dummy 'dummy18'!-->
+		<!-- cannot find module for dummy 'dummy19'!-->
+		<!-- cannot find module for dummy 'dummy20'!-->
+		<!-- cannot find module for dummy 'dummy21'!-->	
+		<!-- cannot find module for dummy 'dummy22'!-->
+		<!-- cannot find module for dummy 'dummy23'!-->
+		<!-- cannot find module for dummy 'dummy24'!-->
+		<!-- cannot find module for dummy 'dummy25'!-->
+		<!-- cannot find module for dummy 'dummy26'!-->
+		<!-- cannot find module for dummy 'dummy27'!-->
+		<!-- cannot find module for dummy 'dummy28'!-->
+		<!-- cannot find module for dummy 'dummy29'!-->
+		<!-- cannot find module for dummy 'dummy30'!-->
+		<!-- cannot find module for dummy 'dummy31'!-->
+		<!-- cannot find module for dummy 'dummy32'!-->
+		<!-- cannot find module for dummy 'dummy33'!-->
+		<!-- cannot find module for dummy 'dummy34'!-->
+		<!-- cannot find module for dummy 'dummy35'!-->
+	</div>
+</group>			
+<group id="dummy1_3_2">
+	<img class="colorline" fullscreenMode="magnific" id="dummy1_3_2_1" src="media/y7_u54_p6_001i.jpg">
+</img>
+</group>
+    <feedbacks>
+            <feedback>
+                <condition>
+                        <and>
+    <propertyCondition property="allOk"/>
+                        </and>
+                </condition>
+<action>
+        <showUrl href="media/allok.mp3" type="narration">
+                        <source src="media/allok.mp3" type="audio/mp4"/>
+        </showUrl>
+</action>
+            </feedback>
+    </feedbacks>
+</group>			
+<group class="slist_horizontal center" id="dummy1_4">
+	<sourceList id="dummy1_4_1" moveElements="true" shuffle="true" sourcelistId="1">
+				<simpleSourceListItem alt="businesswoman">businesswoman</simpleSourceListItem>
+				<simpleSourceListItem alt="journalist">journalist</simpleSourceListItem>
+				<simpleSourceListItem alt="cook">cook</simpleSourceListItem>
+				<simpleSourceListItem alt="doctor">doctor</simpleSourceListItem>
+				<simpleSourceListItem alt="engineer">engineer</simpleSourceListItem>
+				<simpleSourceListItem alt="dentist">dentist</simpleSourceListItem>
+	</sourceList>
+</group>
+</group>
+	            <!-- cannot find module for dummy 'dummy2'!-->
+	            <!-- cannot find module for dummy 'dummy3'!-->
+	            <!-- cannot find module for dummy 'dummy4'!-->
+	            <!-- cannot find module for dummy 'dummy5'!-->
+	            <!-- cannot find module for dummy 'dummy6'!-->
+	            <!-- cannot find module for dummy 'dummy7'!-->
+	            <!-- cannot find module for dummy 'dummy8'!-->
+	            <!-- cannot find module for dummy 'dummy9'!-->
+	            <!-- cannot find module for dummy 'dummy10'!-->
+	        </div>
+	    </div>
+	   	<div class="lesson-footer-buttons">    
+	        <markAllButton class="lesson-footer-action-button mark-answers" id="markAnswers"/>
+	        <showAnswersButton class="lesson-footer-action-button show-answers" id="showAnswers"/>
+	        <resetButton class="lesson-footer-action-button reset" id="reset"/>
+	    </div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>

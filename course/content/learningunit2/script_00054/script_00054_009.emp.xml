@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem adaptive="false" compilerVersion="3.3.2.188" identifier="ITEM_009" playerVersion="1.8.0" timeDependent="false" title="Report">
+<styleDeclaration><link href="../common/default.css" userAgent=".*"/><link href="../common/android.css" userAgent=".*Android"/><link href="../common/ios.css" userAgent=".*iPad|.*iPhone"/></styleDeclaration>
+	<variableProcessing template="default"/>
+		<outcomeDeclaration cardinality="single" identifier="DONE"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONEHISTORY"/>
+		<outcomeDeclaration cardinality="multiple" identifier="DONECHANGES"/>
+		<outcomeDeclaration cardinality="single" identifier="LASTMISTAKEN"/>
+		<outcomeDeclaration cardinality="single" identifier="CHECKS"/>
+		<outcomeDeclaration cardinality="single" identifier="SHOW_ANSWERS"/>
+		<outcomeDeclaration cardinality="single" identifier="RESET"/>
+		<outcomeDeclaration cardinality="single" identifier="MISTAKES"/>
+	<outcomeDeclaration cardinality="single" identifier="TODO">
+		<defaultValue>
+			<value>0</value>
+		</defaultValue>
+	</outcomeDeclaration>
+		<itemBody>
+
+		<div class="page-report">
+			<div class="page-navigation">
+		        <prevItemNavigation/>
+				<nextItemNavigation/>
+			</div>
+			<div class="report-header col-md-7">
+				<div class="page-header">
+					<div class="lesson-header-home-button"><link itemIndex="0"><shape class="home-button"/></link></div>
+					<div class="lesson-header-page-title"><info class="variable-page-title"/></div>
+		        	<div class="lesson-header-lesson-title"><info class="variable-lesson-title"/></div>		
+				</div>
+			</div>
+			<div class="goals-toc-content total-report-content col-md-5">
+				<div class="variable-total-score"><simpleText>Total:</simpleText></div>
+				<info class="variable-total-score"/>
+			</div>
+			<div class="main-toc-content main-report-content col-md-7">
+				<report class="report-content">
+					<prr>
+						<rd>
+							<div class="toc-line-before">
+								<div class="toc-line-before-inner" />
+								<div class="toc-line-before-inner-triangle" />
+							</div>
+							<div class="toc-line">
+								<link>
+									<div class="toc-line-table">
+										<info class="variable-page-title" />
+										<info class="variable-page-score-progress" />
+										<info class="variable-page-score" />
+										<div class="variable-page-tick" />
+									</div>
+								</link>
+							</div>
+							<div class="toc-line-after">
+								<div class="toc-line-after-inner" />
+								<div class="toc-line-after-inner-triangle" />
+							</div>
+						</rd>
+					</prr>
+					<rr>
+						<rd>
+							<div class="toc-line-before">
+								<div class="toc-line-before-inner" />
+								<div class="toc-line-before-inner-triangle" />
+							</div>
+							<div class="toc-line">
+								<div class="qp-link-content">
+									<div class="toc-line-table">
+										<div class="variable-page-title">
+											<simpleText>Total:</simpleText>
+										</div>
+										<info class="variable-total-score total-score" />
+									</div>
+								</div>
+							</div>
+							<div class="toc-line-after">
+								<div class="toc-line-after-inner" />
+								<div class="toc-line-after-inner-triangle" />
+							</div>
+						</rd>
+					</rr>
+				</report>
+
+			</div>
+			<div class="report-footer">       
+		        <div class="lesson-footer-navigation">
+		        	<prevItemNavigation class="lesson-footer-navigation-button previous" id="prevPage"/>
+					<div class="lesson-footer-page-number"> <info class="variable-page-number"/></div>
+					<nextItemNavigation class="lesson-footer-navigation-button next" id="nextPage"/>
+				</div>
+			</div>
+			<div class="linedesign-bottom">
+			    <div class="line left color-back-1"/>
+			    <div class="line left color-back-2"/>
+			    <div class="line left color-back-3"/>
+			    <div class="line left color-back-4"/>
+			    <div class="line left color-back-5"/>
+			    <div class="line left color-back-6"/>
+			    <div class="line left color-back-7"/>
+			</div>
+		</div>
+	    <div class="page-menu">	
+			<div class="menu-button"/>
+			<report class="menu-content">
+			  <prr>
+				<rd>
+					<div class="toc-line"> 
+						<link> 
+							<div class="toc-line-table">
+								<info class="variable-page-title"/>
+							</div>
+						</link>
+					</div>
+				</rd>
+			  </prr>
+			</report>
+		</div>
+			</itemBody>
+</assessmentItem>
