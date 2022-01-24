@@ -131,12 +131,14 @@ function createDrawline(obj) {
         this.classList.add("--pratice-selected");
         currentStartPoint = this;
 
-        if (isMobile == false) {
-            currentMousePosition = [e.pageX, e.pageY];
-        }
-        else {
+        if (mobileAndTabletCheck()) {
             currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
         }
+        else {
+            currentMousePosition = [e.pageX, e.pageY];
+        }
+
+        console.log(mobileAndTabletCheck());
 
         let m_startPositions = GetPointArrayPosition(currentStartPoint);
 
@@ -171,11 +173,11 @@ function createDrawline(obj) {
         this.classList.add("--pratice-selected");
         currentStartPoint = this;
 
-        if (isMobile == false) {
-            currentMousePosition = [e.pageX, e.pageY];
+        if (mobileAndTabletCheck()) {
+            currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
         }
         else {
-            currentMousePosition = [e.touches[0].pageX, e.touches[0].pageY];
+            currentMousePosition = [e.pageX, e.pageY];
         }
 
         let m_startPositions = GetPointArrayPosition(currentStartPoint);
@@ -289,7 +291,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 06       ');
+            console.log('      att 07       ');
             console.log('touchemove01 ', currentMousePosition[0]);
             console.log('touchemove02 ', currentMousePosition[1]);
         }
