@@ -293,7 +293,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 13       ');
+            console.log('      att 14       ');
             // console.log('touchemove01 ', currentMousePosition[0]);
             // console.log('touchemove02 ', currentMousePosition[1]);
         }
