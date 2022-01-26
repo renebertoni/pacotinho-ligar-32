@@ -44,6 +44,8 @@ function createDrawline(obj) {
     let startPointMouseUpEvent = function (e) {
         RemoveGhost();
 
+        console.log('teste start');
+
         let i = parseInt(e.target.id.split("-")[1]);
 
         currentStartPoint.removeEventListener("mousedown", endPointEvent);
@@ -77,6 +79,8 @@ function createDrawline(obj) {
 
     let endPointMouseUpEvent = function (e) {
         RemoveGhost();
+
+        console.log('teste end');
 
         let i = parseInt(e.target.id.split("-")[1]);
 
@@ -304,7 +308,7 @@ function createDrawline(obj) {
             }
         });
 
-        window.addEventListener("touchleave", function (e) {
+        window.addEventListener("touchend", function (e) {
             if (currentStartPoint != null) {
                 window.ontouchmove = function (e) { };
                 if (currentStartPoint.firstChild != null) {
@@ -321,7 +325,7 @@ function createDrawline(obj) {
             } catch (e) { }
         });
 
-        currentStartPoint.addEventListener("touchleave", function (e) {
+        currentStartPoint.addEventListener("touchend", function (e) {
             window.ontouchmove = function (e) { };
             try {
                 currentStartPoint.classList.remove("--pratice-selected");
