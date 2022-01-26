@@ -118,10 +118,10 @@ function createDrawline(obj) {
     let startPointEvent = function (e) {
 
         for (let i = 0; i < amout; i++) {
-            // endPoint[i].addEventListener("mouseup", endPointMouseUpEvent);
+            endPoint[i].addEventListener("mouseup", endPointMouseUpEvent);
             endPoint[i].addEventListener("touchend", endPointMouseUpEvent);
 
-            // startPoint[i].removeEventListener("mouseup", startPointMouseUpEvent);
+            startPoint[i].removeEventListener("mouseup", startPointMouseUpEvent);
             startPoint[i].removeEventListener("touchend", startPointMouseUpEvent);
 
             // console.log("Desabilitando Start: " + i);
@@ -158,16 +158,17 @@ function createDrawline(obj) {
 
     let endPointEvent = function (e) {
         for (let i = 0; i < amout; i++) {
-            // startPoint[i].addEventListener("mouseup", startPointMouseUpEvent);
+            startPoint[i].addEventListener("mouseup", startPointMouseUpEvent);
             startPoint[i].addEventListener("touchend", startPointMouseUpEvent);
 
-            // endPoint[i].removeEventListener("mouseup", endPointMouseUpEvent);
+            endPoint[i].removeEventListener("mouseup", endPointMouseUpEvent);
             endPoint[i].removeEventListener("touchend", endPointMouseUpEvent);
 
             // console.log("Desabilitando End: " + i);
         }
 
         e.preventDefault();
+        console.log(this);
         this.classList.add("--pratice-selected");
         currentStartPoint = this;
 
@@ -289,9 +290,9 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 08       ');
-            console.log('touchemove01 ', currentMousePosition[0]);
-            console.log('touchemove02 ', currentMousePosition[1]);
+            console.log('      att 09       ');
+            // console.log('touchemove01 ', currentMousePosition[0]);
+            // console.log('touchemove02 ', currentMousePosition[1]);
         }
 
         window.addEventListener("mouseup", function (e) {
