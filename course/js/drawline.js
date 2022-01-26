@@ -128,7 +128,8 @@ function createDrawline(obj) {
             startPoint[i].removeEventListener("mouseup", startPointMouseUpEvent);
             startPoint[i].removeEventListener("touchend", startPointMouseUpEvent);
 
-            console.log("Desabilitando Start: " + endPoint[i]);
+            console.log("Desabilitando Start: ", endPoint[i]);
+            console.log(endPoint);
         }
 
         e.preventDefault();
@@ -293,7 +294,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 14       ');
+            console.log('      att 15       ');
             // console.log('touchemove01 ', currentMousePosition[0]);
             // console.log('touchemove02 ', currentMousePosition[1]);
         }
