@@ -168,7 +168,6 @@ function createDrawline(obj) {
         }
 
         e.preventDefault();
-        console.log(this);
         this.classList.add("--pratice-selected");
         currentStartPoint = this;
 
@@ -290,7 +289,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 09       ');
+            console.log('      att 10       ');
             // console.log('touchemove01 ', currentMousePosition[0]);
             // console.log('touchemove02 ', currentMousePosition[1]);
         }
@@ -305,7 +304,7 @@ function createDrawline(obj) {
             }
         });
 
-        window.addEventListener("touchend", function (e) {
+        window.addEventListener("touchleave", function (e) {
             if (currentStartPoint != null) {
                 window.ontouchmove = function (e) { };
                 if (currentStartPoint.firstChild != null) {
@@ -322,7 +321,7 @@ function createDrawline(obj) {
             } catch (e) { }
         });
 
-        currentStartPoint.addEventListener("touchend", function (e) {
+        currentStartPoint.addEventListener("touchleave", function (e) {
             window.ontouchmove = function (e) { };
             try {
                 currentStartPoint.classList.remove("--pratice-selected");
