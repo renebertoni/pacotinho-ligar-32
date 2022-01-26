@@ -124,7 +124,7 @@ function createDrawline(obj) {
         for (let i = 0; i < amout; i++) {
             endPoint[i].addEventListener("mouseup", endPointMouseUpEvent);
             // endPoint[i].addEventListener("touchend", endPointMouseUpEvent);
-            endPoint[i].ontouchend = endPointMouseUpEvent;
+            endPoint[i].ontouchend = () => {endPointMouseUpEvent()};
 
             startPoint[i].removeEventListener("mouseup", startPointMouseUpEvent);
             startPoint[i].removeEventListener("touchend", startPointMouseUpEvent);
@@ -295,7 +295,7 @@ function createDrawline(obj) {
 
             CreateLine(currentStartPoint, ghost);
 
-            console.log('      att 17       ');
+            console.log('      att 18       ');
             // console.log('touchemove01 ', currentMousePosition[0]);
             // console.log('touchemove02 ', currentMousePosition[1]);
         }
