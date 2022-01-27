@@ -2,6 +2,7 @@
 // var pa_telas[currentScreen] = 0;
 var fix_button;
 var pa_telas = [0, 0, 0, 0, 0, 0, 0, 0] // colocar valores relativo a todas as telas de exercicio
+var position = [];
 
 function createDrawline(obj) {
     correctAnswer = [];
@@ -120,6 +121,15 @@ function createDrawline(obj) {
     };
 
     let startPointEvent = function (e) {
+
+         e.target.addEventListener("touchend", (event)=>{
+                var endTarget = document.elementFromPoint(
+                    position[0],
+                    position[1]
+                );
+                console.log(endTarget);
+                console.log(position);
+        });
 
         for (let i = 0; i < amout; i++) {
             endPoint[i].addEventListener("mouseup", endPointMouseUpEvent);
@@ -277,16 +287,20 @@ function createDrawline(obj) {
             let left = e.pageX;
             let top = e.pageY;
 
+            
             ghost.style.left = ((currentStartPoint.offsetLeft) - (currentMousePosition[0] - left) - 20) + "px";
             ghost.style.top = ((currentStartPoint.offsetTop) - (currentMousePosition[1] - top) - 20) + "px";
-
+            
             CreateLine(currentStartPoint, ghost);
         }
-
+        
         window.ontouchmove = function (e) {
-
+            
             let left = e.touches[0].pageX;
             let top = e.touches[0].pageY;
+
+            position[0] = left;
+            position[1] = top;
 
             ghost.style.left = ((currentStartPoint.offsetLeft) - (currentMousePosition[0] - left) - 20) + "px";
             ghost.style.top = ((currentStartPoint.offsetTop) - (currentMousePosition[1] - top) - 20) + "px";
