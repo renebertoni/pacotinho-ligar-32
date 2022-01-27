@@ -79,7 +79,6 @@ function createDrawline(obj) {
 
     let endPointMouseUpEvent = function (e) {
         RemoveGhost();
-
         console.log('teste start');
 
         let i = parseInt(e.target.id.split("-")[1]);
@@ -106,6 +105,7 @@ function createDrawline(obj) {
         }
 
         currentStartPoint = null;
+        e.stopPropagation();
     }
 
     // Checar mobile avançado
@@ -123,13 +123,12 @@ function createDrawline(obj) {
 
         for (let i = 0; i < amout; i++) {
             endPoint[i].addEventListener("mouseup", endPointMouseUpEvent);
-            endPoint[i].addEventListener("touchend", endPointMouseUpEvent, true);
+            endPoint[i].addEventListener("touchend", endPointMouseUpEvent);
 
             startPoint[i].removeEventListener("mouseup", startPointMouseUpEvent);
             startPoint[i].removeEventListener("touchend", startPointMouseUpEvent);
 
-            console.log("Desabilitando Start: ", endPoint[i]);
-            console.log(endPoint);
+            // console.log("Desabilitando Start: " + i);
         }
 
         e.preventDefault();
