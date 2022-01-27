@@ -44,8 +44,7 @@ function createDrawline(obj) {
     // #region events
     let startPointMouseUpEvent = function (e) {
         RemoveGhost();
-
-        console.log('teste start');
+        RemoveTouchUP();
 
         let i = parseInt(e.target.id.split("-")[1]);
 
@@ -80,7 +79,7 @@ function createDrawline(obj) {
 
     let endPointMouseUpEvent = function (e) {
         RemoveGhost();
-        console.log('teste start');
+        RemoveTouchUP();
 
         let i = parseInt(e.target.id.split("-")[1]);
 
@@ -120,26 +119,28 @@ function createDrawline(obj) {
         return check;
     };
 
-    let startPointEvent = function (e) {
+    //touch
+    const eventUP = (event) => {
+        var endTarget = document.elementFromPoint(
+            position[0],
+            position[1] - window.scrollY
+        );
 
-         e.target.addEventListener("touchend", (event)=>{
-                var endTarget = document.elementFromPoint(
-                    position[0],
-                    position[1]
-                );
-                console.log(endTarget);
-                console.log(position);
-        });
+        simulate(endTarget, "mouseup");
+    }
+
+    let startPointEvent = function (e) {
 
         for (let i = 0; i < amout; i++) {
             endPoint[i].addEventListener("mouseup", endPointMouseUpEvent);
-            endPoint[i].addEventListener("touchend", endPointMouseUpEvent);
 
             startPoint[i].removeEventListener("mouseup", startPointMouseUpEvent);
             startPoint[i].removeEventListener("touchend", startPointMouseUpEvent);
-
+            startPoint[i].removeEventListener("touchend", eventUP);
             // console.log("Desabilitando Start: " + i);
         }
+
+        this.addEventListener("touchend", eventUP);
 
         e.preventDefault();
         this.classList.add("--pratice-selected");
@@ -173,13 +174,14 @@ function createDrawline(obj) {
     let endPointEvent = function (e) {
         for (let i = 0; i < amout; i++) {
             startPoint[i].addEventListener("mouseup", startPointMouseUpEvent);
-            startPoint[i].addEventListener("touchend", startPointMouseUpEvent);
 
             endPoint[i].removeEventListener("mouseup", endPointMouseUpEvent);
             endPoint[i].removeEventListener("touchend", endPointMouseUpEvent);
-
+            endPoint[i].removeEventListener("touchend", eventUP);
             // console.log("Desabilitando End: " + i);
         }
+
+        this.addEventListener("touchend", eventUP);
 
         e.preventDefault();
         this.classList.add("--pratice-selected");
@@ -287,15 +289,15 @@ function createDrawline(obj) {
             let left = e.pageX;
             let top = e.pageY;
 
-            
+
             ghost.style.left = ((currentStartPoint.offsetLeft) - (currentMousePosition[0] - left) - 20) + "px";
             ghost.style.top = ((currentStartPoint.offsetTop) - (currentMousePosition[1] - top) - 20) + "px";
-            
+
             CreateLine(currentStartPoint, ghost);
         }
-        
+
         window.ontouchmove = function (e) {
-            
+
             let left = e.touches[0].pageX;
             let top = e.touches[0].pageY;
 
@@ -306,10 +308,6 @@ function createDrawline(obj) {
             ghost.style.top = ((currentStartPoint.offsetTop) - (currentMousePosition[1] - top) - 20) + "px";
 
             CreateLine(currentStartPoint, ghost);
-
-            console.log('      att 22       ');
-            // console.log('touchemove01 ', currentMousePosition[0]);
-            // console.log('touchemove02 ', currentMousePosition[1]);
         }
 
         window.addEventListener("mouseup", function (e) {
@@ -354,6 +352,15 @@ function createDrawline(obj) {
             document.getElementById("body").removeChild(ghost);
             ghost = null;
         }
+    }
+
+    function RemoveTouchUP() {
+        startPoint.forEach((element, index) => {
+            startPoint[index].removeEventListener("touchend", eventUP);
+        });
+        endPoint.forEach((element, index) => {
+            endPoint[index].removeEventListener("touchend", eventUP);
+        });
     }
 
     function CreateLine(from, to) {
@@ -522,12 +529,6 @@ function SignInFooterButton(markFunction, showFunction, resetFunction) {
             markFunction(footerButtons[i].id);
             showFunction(footerButtons[i].id);
         });
-
-        footerButtons[i].addEventListener("touchstart", function (e) {
-            resetFunction(footerButtons[i].id);
-            markFunction(footerButtons[i].id);
-            showFunction(footerButtons[i].id);
-        });
     }
 }
 
@@ -553,4 +554,66 @@ function InitializeDrawLine() {
 
     fix_button = document.querySelector('.qp-identification-option');
     fix_button.style.cssText = "display: none !important";
+}
+
+
+
+
+
+
+//|||||||||||||
+function simulate(element, eventName) {
+    var options = extend(defaultOptions, arguments[2] || {});
+    var oEvent, eventType = null;
+
+    for (var name in eventMatchers) {
+        if (eventMatchers[name].test(eventName)) { eventType = name; break; }
+    }
+
+    if (!eventType)
+        throw new SyntaxError('Only HTMLEvents and MouseEvents interfaces are supported');
+
+    if (document.createEvent) {
+        oEvent = document.createEvent(eventType);
+        if (eventType == 'HTMLEvents') {
+            oEvent.initEvent(eventName, options.bubbles, options.cancelable);
+        }
+        else {
+            oEvent.initMouseEvent(eventName, options.bubbles, options.cancelable, document.defaultView,
+                options.button, options.pointerX, options.pointerY, options.pointerX, options.pointerY,
+                options.ctrlKey, options.altKey, options.shiftKey, options.metaKey, options.button, element);
+        }
+        element.dispatchEvent(oEvent);
+    }
+    else {
+        options.clientX = options.pointerX;
+        options.clientY = options.pointerY;
+        var evt = document.createEventObject();
+        oEvent = extend(evt, options);
+        element.fireEvent('on' + eventName, oEvent);
+    }
+    return element;
+}
+
+
+function extend(destination, source) {
+    for (var property in source)
+        destination[property] = source[property];
+    return destination;
+}
+
+var eventMatchers = {
+    'HTMLEvents': /^(?:load|unload|abort|error|select|change|submit|reset|focus|blur|resize|scroll)$/,
+    'MouseEvents': /^(?:click|dblclick|mouse(?:down|up|over|move|out))$/
+}
+var defaultOptions = {
+    pointerX: 0,
+    pointerY: 0,
+    button: 0,
+    ctrlKey: false,
+    altKey: false,
+    shiftKey: false,
+    metaKey: false,
+    bubbles: true,
+    cancelable: true
 }
